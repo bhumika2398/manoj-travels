@@ -2,6 +2,8 @@ import { HeroVideo } from "./HeroVideo";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
+import { CallButton } from "@/components/common/CallButton";
+import { WhatsAppButton } from "@/components/common/WhatsAppButton";
 
 // Full-screen cinematic hero — two clips crossfading in sequence
 // (Jog Falls → Munnar), Video 1 → 2 → 1 → ... Both source clips are
@@ -35,10 +37,12 @@ export function Hero() {
         </Reveal>
 
         <Reveal delay={260}>
-          <div className="mt-9">
+          <div className="mt-9 flex flex-wrap items-center gap-3">
             <Button href="/fleet" variant="accent" size="lg">
               Book Now
             </Button>
+            <CallButton variant="inline" />
+            <WhatsAppButton variant="inline" />
           </div>
         </Reveal>
       </Container>

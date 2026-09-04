@@ -27,11 +27,11 @@ export function WhatsAppButton({
         rel="noopener noreferrer"
         aria-label="Enquire on WhatsApp"
         className={cn(
-          "glass-light flex h-14 w-14 items-center justify-center rounded-full text-[var(--color-accent-2)] transition-transform duration-200 hover:scale-105",
+          "glass-light flex h-16 w-16 items-center justify-center rounded-full text-[var(--color-accent-2)] transition-transform duration-200 hover:scale-105 active:scale-95",
           className
         )}
       >
-        <WhatsAppIcon className="h-7 w-7" />
+        <WhatsAppIcon className="h-8 w-8" />
       </a>
     );
   }
@@ -42,7 +42,7 @@ export function WhatsAppButton({
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        "glass-light inline-flex items-center justify-center gap-2 rounded-[var(--radius-sm)] px-6 py-3.5 text-[16px] font-medium text-[var(--color-ink)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[var(--shadow-lift)]",
+        "glass-light inline-flex items-center justify-center gap-2 rounded-[var(--radius-sm)] px-6 py-3.5 text-[16px] font-medium text-[var(--color-ink)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[var(--shadow-lift)] active:translate-y-0 active:scale-[0.98]",
         className
       )}
     >

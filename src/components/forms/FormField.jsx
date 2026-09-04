@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
 const baseInput =
-  "w-full rounded-[var(--radius-md)] border border-[var(--color-line)] bg-white/75 px-4 py-3.5 text-[17px] text-[var(--color-ink)] placeholder:text-[var(--color-text-muted)] transition-all duration-200 ease-out focus:-translate-y-px focus:border-[var(--color-accent)] focus:bg-white focus:shadow-[0_0_0_4px_rgba(215,122,97,0.12)] focus:outline-none";
+  "w-full rounded-[var(--radius-md)] border border-[rgba(200,183,156,0.4)] bg-white/60 px-4 py-3.5 text-[17px] text-[var(--color-ink)] placeholder:text-[var(--color-text-muted)] backdrop-blur-sm transition-all duration-200 ease-out focus:-translate-y-px focus:border-[var(--color-accent)] focus:bg-white/85 focus:shadow-[0_0_0_4px_rgba(215,122,97,0.12)] focus:outline-none";
 
 export function FormField({
   label,
@@ -33,7 +33,7 @@ export function FormField({
       ) : (
         <input id={name} name={name} type={type} className={baseInput} required={required} {...props} />
       )}
-      {error && <span className="mt-1 block text-[14px] text-[var(--color-danger)]">{error}</span>}
+      {error && <span className="animate-fade-in mt-1 block text-[14px] text-[var(--color-danger)]">{error}</span>}
     </label>
   );
 }

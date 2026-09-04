@@ -31,9 +31,7 @@ export default function FAQPage() {
       <Section tone="paper">
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "FAQ", href: "/faq" }]} />
       <div className="mt-10 grid grid-cols-1 gap-12 lg:grid-cols-[1.3fr_1fr]">
-        <Reveal>
-          <Accordion items={generalFaqs} />
-        </Reveal>
+        <Accordion items={generalFaqs} />
 
         <Reveal delay={120} className="relative hidden self-start overflow-hidden rounded-[var(--radius-lg)] shadow-[var(--shadow-lift)] lg:block">
           <div className="relative h-64">

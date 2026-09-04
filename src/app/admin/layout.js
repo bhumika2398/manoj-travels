@@ -5,15 +5,16 @@ export const metadata = {
   robots: { index: false, follow: false },
 };
 
-// Deliberately styled as a plain, neutral operational dashboard — gray/white,
-// not the marketing site's ivory/glass/cinematic language — so it never
-// reads as part of the public brand experience. See AdminNotice for the
-// current (unauthenticated, non-persistent) state of this panel.
+// An internal operational dashboard, kept editorially quieter than the
+// public marketing pages — but built from the same warm ivory/espresso
+// tokens and glass surfaces, so it reads as one cohesive product rather
+// than a bolted-on generic admin theme. See AdminNotice for the current
+// (unauthenticated, non-persistent) state of this panel.
 export default function AdminLayout({ children }) {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900">
+    <div className="min-h-screen bg-[var(--color-paper-2)] text-[var(--color-ink)]">
       <div className="mx-auto flex max-w-[1600px]">
-        <aside className="sticky top-0 hidden h-screen w-64 shrink-0 border-r border-gray-200 bg-white md:block">
+        <aside className="glass-light sticky top-0 hidden h-screen w-64 shrink-0 md:block">
           <AdminSidebar />
         </aside>
         <div className="min-w-0 flex-1">{children}</div>

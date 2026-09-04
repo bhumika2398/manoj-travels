@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useKenBurns } from "@/hooks/useKenBurns";
 import { cn } from "@/lib/utils";
 
 // Video 1 → Video 2 → Video 1 → ...
@@ -46,6 +47,7 @@ export function HeroVideo({ className }) {
   const [armedForPreload, setArmedForPreload] = useState(0); // preload up through this index
   const [firstFramePainted, setFirstFramePainted] = useState(false);
   const [allFailed, setAllFailed] = useState(false);
+  const kenBurnsEnabled = useKenBurns();
 
   useEffect(() => {
     activeRef.current = active;
@@ -193,23 +195,29 @@ export function HeroVideo({ className }) {
       />
 
       {SOURCES.map((source, index) => (
-        <video
+        // The Ken Burns drift lives on this wrapper's own transform, entirely
+        // separate from the <video>'s own inline transform below (which
+        // drives the crossfade scale/opacity) — two independent transforms
+        // on two different elements, so neither ever overwrites the other.
+        <div
           key={source.src}
-          ref={refs[index]}
-          src={source.src}
-          className={cn(
-            "absolute inset-0 h-full w-full object-cover transition-[opacity,transform] duration-[1400ms] ease-out"
-          )}
-          style={{
-            objectPosition: source.position,
-            opacity: active === index ? 1 : 0,
-            transform: active === index ? "scale(1)" : "scale(1.03)",
-          }}
-          muted
-          playsInline
-          autoPlay={index === 0}
-          preload={index <= armedForPreload ? "auto" : "none"}
-        />
+          className={cn("absolute inset-0 h-full w-full overflow-hidden", kenBurnsEnabled && active === index && "kenburns")}
+        >
+          <video
+            ref={refs[index]}
+            src={source.src}
+            className="h-full w-full object-cover transition-[opacity,transform] duration-[1400ms] ease-out"
+            style={{
+              objectPosition: source.position,
+              opacity: active === index ? 1 : 0,
+              transform: active === index ? "scale(1)" : "scale(1.03)",
+            }}
+            muted
+            playsInline
+            autoPlay={index === 0}
+            preload={index <= armedForPreload ? "auto" : "none"}
+          />
+        </div>
       ))}
     </div>
   );

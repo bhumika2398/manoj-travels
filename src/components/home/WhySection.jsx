@@ -1,6 +1,10 @@
+"use client";
+
 import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
+import { MaskReveal } from "@/components/ui/MaskReveal";
 import { Image } from "@/components/ui/Image";
+import { useParallax } from "@/hooks/useParallax";
 
 // Verified, no-fluff reasons to book — no GPS/tracking, punctuality
 // guarantees or safety-certification claims that aren't actually true.
@@ -33,6 +37,8 @@ const benefits = [
  * cards. Sits between Services and Featured Destinations.
  */
 export function WhySection() {
+  const [parallaxRef, parallaxStyle] = useParallax(18);
+
   return (
     <Section tone="sand" id="why-us">
       <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-20">
@@ -63,22 +69,21 @@ export function WhySection() {
           </ul>
         </div>
 
-        <Reveal
-          variant="scale"
-          className="relative aspect-[4/5] w-full overflow-hidden rounded-[var(--radius-lg)] shadow-[var(--shadow-lift)] lg:aspect-[3/4]"
-        >
-          <Image
-            src="/images/destinations/mangalore.png"
-            alt="Mangalore coastline — one of the destinations Manoj Tours and Travels covers"
-            wrapperClassName="h-full w-full"
-            className="object-cover"
-            sizes="(min-width: 1024px) 40vw, 90vw"
-          />
-          <div
-            aria-hidden="true"
-            className="absolute inset-0 bg-gradient-to-t from-[var(--color-ink)]/20 via-transparent to-transparent"
-          />
-        </Reveal>
+        <MaskReveal className="aspect-[4/5] w-full rounded-[var(--radius-lg)] shadow-[var(--shadow-lift)] lg:aspect-[3/4]">
+          <div ref={parallaxRef} style={parallaxStyle} className="h-full w-full scale-110">
+            <Image
+              src="/images/destinations/mangalore.png"
+              alt="Mangalore coastline — one of the destinations Manoj Tours and Travels covers"
+              wrapperClassName="h-full w-full"
+              className="object-cover"
+              sizes="(min-width: 1024px) 40vw, 90vw"
+            />
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 bg-gradient-to-t from-[var(--color-ink)]/20 via-transparent to-transparent"
+            />
+          </div>
+        </MaskReveal>
       </div>
     </Section>
   );

@@ -8,11 +8,19 @@ import { DateTimeFields } from "./DateTimeFields";
 import { FormField } from "@/components/forms/FormField";
 import { BookingConfirmation } from "./BookingConfirmation";
 import { Button } from "@/components/ui/Button";
+import { CallButton } from "@/components/common/CallButton";
 import { WhatsAppButton } from "@/components/common/WhatsAppButton";
-import { PASSENGER_OPTIONS, VEHICLE_OPTIONS, TRIP_TYPES } from "@/lib/constants";
+import { PASSENGER_OPTIONS, TRIP_TYPES } from "@/lib/constants";
+import { fleet } from "@/data/fleet";
 import { cn } from "@/lib/utils";
 
-/** Premium hero booking / enquiry selector — dynamic per trip type. */
+// Vehicle choices come straight from the real fleet — no invented vehicles.
+const FLEET_VEHICLE_OPTIONS = fleet.map((v) => ({
+  value: v.slug,
+  label: `${v.name} (${v.capacity})`,
+}));
+
+/** Premium homepage/hero booking / enquiry selector — dynamic per trip type. */
 export function BookingForm({ className }) {
   const { values, update, errors, status, submit } = useBooking();
   const [attempted, setAttempted] = useState(false);
@@ -32,7 +40,10 @@ export function BookingForm({ className }) {
     if (values.time) parts.push(`Time: ${values.time}`);
     if (values.hours) parts.push(`Package: ${values.hours}`);
     if (values.passengers) parts.push(`Passengers: ${values.passengers}`);
-    if (values.vehicle) parts.push(`Vehicle: ${VEHICLE_OPTIONS.find((v) => v.value === values.vehicle)?.label || values.vehicle}`);
+    if (values.vehicle) {
+      parts.push(`Vehicle: ${FLEET_VEHICLE_OPTIONS.find((v) => v.value === values.vehicle)?.label || values.vehicle}`);
+    }
+    if (values.message) parts.push(`Message: ${values.message}`);
     return parts.join("\n");
   }, [values, tripLabel]);
 
@@ -56,6 +67,14 @@ export function BookingForm({ className }) {
         <DateTimeFields tripType={values.tripType} values={values} onChange={update} />
 
         <FormField
+          label="Car / Vehicle"
+          name="vehicle"
+          as="select"
+          value={values.vehicle}
+          onChange={(e) => update("vehicle", e.target.value)}
+          options={[{ value: "", label: "Select" }, ...FLEET_VEHICLE_OPTIONS]}
+        />
+        <FormField
           label="Passengers"
           name="passengers"
           as="select"
@@ -63,19 +82,11 @@ export function BookingForm({ className }) {
           onChange={(e) => update("passengers", e.target.value)}
           options={["", ...PASSENGER_OPTIONS].map((v) => ({ value: v, label: v || "Select" }))}
         />
-        <FormField
-          label="Vehicle"
-          name="vehicle"
-          as="select"
-          value={values.vehicle}
-          onChange={(e) => update("vehicle", e.target.value)}
-          options={[{ value: "", label: "Select" }, ...VEHICLE_OPTIONS]}
-        />
       </div>
 
       <div className="mt-3 grid gap-3 sm:grid-cols-2">
         <FormField
-          label="Your Name"
+          label="Name"
           name="name"
           required
           error={attempted ? errors.name : undefined}
@@ -93,14 +104,27 @@ export function BookingForm({ className }) {
         />
       </div>
 
-      <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-        <Button type="submit" variant="accent" size="lg" className="flex-1" disabled={status === "submitting"}>
-          {status === "submitting" ? "Sending…" : "Book / Enquire Now"}
+      <FormField
+        label="Message / Special Requirement"
+        name="message"
+        as="textarea"
+        className="mt-3"
+        placeholder="Any other details about your trip (optional)"
+        value={values.message}
+        onChange={(e) => update("message", e.target.value)}
+      />
+
+      <div className="mt-5">
+        <Button type="submit" variant="accent" size="lg" className="w-full" disabled={status === "submitting"}>
+          {status === "submitting" ? "Sending…" : "Send Enquiry"}
         </Button>
-        <WhatsAppButton message={whatsappMessage} label="Enquire on WhatsApp" className="flex-1" />
+        <div className="mt-3 grid gap-3 sm:grid-cols-2">
+          <CallButton variant="inline" className="w-full" />
+          <WhatsAppButton message={whatsappMessage} label="WhatsApp Enquiry" className="w-full" />
+        </div>
       </div>
       {status === "error" && (
-        <p className="mt-3 text-sm text-[var(--color-danger)]">
+        <p className="animate-fade-in mt-3 text-sm text-[var(--color-danger)]">
           Something went wrong sending your enquiry — please call or WhatsApp us instead.
         </p>
       )}

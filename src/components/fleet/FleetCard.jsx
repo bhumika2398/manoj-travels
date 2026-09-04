@@ -11,7 +11,7 @@ export function FleetCard({ vehicle, onBook }) {
   return (
     <div className="group overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-line)] bg-[var(--color-paper)] shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-lift)]">
       <Link href={`/fleet/${vehicle.slug}`} className="block">
-        <div className="relative flex h-64 items-center justify-center bg-[var(--color-paper-2)] p-6">
+        <div className="img-hover-sweep relative flex h-72 items-center justify-center bg-[var(--color-paper-2)] p-6">
           <Image
             src={vehicle.image}
             alt={`${vehicle.name} — ${vehicle.category} available with Manoj Tours and Travels`}

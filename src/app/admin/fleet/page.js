@@ -26,11 +26,11 @@ export default function AdminFleetPage() {
       <AdminTopbar title="Fleet" />
       <div className="p-4 md:p-8">
         <AdminCard>
-          <p className="mb-5 text-sm text-gray-500">
+          <p className="mb-5 text-sm text-[var(--color-text-muted)]">
             Source of truth for the public site is{" "}
-            <code className="rounded bg-gray-100 px-1 py-0.5 text-[13px]">src/data/fleet.js</code>. Image paths
+            <code className="rounded bg-[var(--color-paper-2)] px-1 py-0.5 text-[13px]">src/data/fleet.js</code>. Image paths
             must point to a file already uploaded to{" "}
-            <code className="rounded bg-gray-100 px-1 py-0.5 text-[13px]">public/images/fleet/</code>.
+            <code className="rounded bg-[var(--color-paper-2)] px-1 py-0.5 text-[13px]">public/images/fleet/</code>.
           </p>
           <ResourceManager title="Vehicle" fields={FIELDS} initialItems={fleet} columns={COLUMNS} />
         </AdminCard>

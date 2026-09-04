@@ -7,6 +7,7 @@ import { Video } from "@/components/ui/Video";
 import { Button } from "@/components/ui/Button";
 import { CallButton } from "@/components/common/CallButton";
 import { WhatsAppButton } from "@/components/common/WhatsAppButton";
+import { AboutKanyakumariImage } from "@/components/about/AboutKanyakumariImage";
 import { business } from "@/config/business.config";
 import { buildMetadata } from "@/lib/metadata";
 
@@ -49,22 +50,40 @@ export default function AboutPage() {
 
       <Section tone="paper">
         <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "About", href: "/about" }]} />
-        <div className="mt-10 grid grid-cols-1 gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:items-center lg:gap-16">
-          <Reveal variant="scale" className="relative mx-auto aspect-[9/16] w-full max-w-[280px] overflow-hidden rounded-[var(--radius-lg)] shadow-[var(--shadow-lift)] lg:mx-0">
-            <Video src="/videos/sections/ooty-coonoor.mp4" />
-          </Reveal>
-          <Reveal delay={120}>
-            <h2 className="text-h3 font-display text-[var(--color-ink)]">What we do</h2>
+        <Reveal
+          variant="scale"
+          className="relative mt-10 aspect-video w-full overflow-hidden rounded-[var(--radius-lg)] shadow-[var(--shadow-lift)]"
+        >
+          <Video src="/videos/sections/ooty-coonoor.mp4" />
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 bg-gradient-to-t from-[var(--color-ink)]/35 via-transparent to-transparent"
+          />
+        </Reveal>
+        <Reveal delay={120} className="mx-auto mt-10 max-w-2xl text-center">
+          <h2 className="text-h3 font-display text-[var(--color-ink)]">What we do</h2>
+          <p className="text-body mt-5 text-[var(--color-text-muted)]">
+            We provide taxi and cab hire across four core services — one-way outstation drops, per-km round
+            trips, hourly local packages, and airport pickup &amp; drop — supported by a fleet ranging from
+            sedans to a larger Tempo Traveller for group travel.
+          </p>
+          <p className="text-body mt-4 text-[var(--color-text-muted)]">
+            Customers can book by phone, WhatsApp, or through the enquiry form on this website, and we
+            confirm the vehicle and fare directly before the trip.
+          </p>
+        </Reveal>
+      </Section>
+
+      <Section tone="paper">
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
+          <Reveal>
+            <h2 className="text-h3 font-display text-[var(--color-ink)]">Wherever the road leads</h2>
             <p className="text-body mt-5 text-[var(--color-text-muted)]">
-              We provide taxi and cab hire across four core services — one-way outstation drops, per-km round
-              trips, hourly local packages, and airport pickup &amp; drop — supported by a fleet ranging from
-              sedans to a larger Tempo Traveller for group travel.
-            </p>
-            <p className="text-body mt-4 text-[var(--color-text-muted)]">
-              Customers can book by phone, WhatsApp, or through the enquiry form on this website, and we
-              confirm the vehicle and fare directly before the trip.
+              From Bangalore&rsquo;s city streets to South India&rsquo;s coastline at Kanyakumari, we plan the
+              drive so you can enjoy the destination — one way, round trip, or a longer tour package.
             </p>
           </Reveal>
+          <AboutKanyakumariImage />
         </div>
       </Section>
 

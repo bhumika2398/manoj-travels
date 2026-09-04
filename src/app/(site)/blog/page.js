@@ -3,6 +3,7 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Breadcrumbs } from "@/components/common/Breadcrumbs";
 import { Image } from "@/components/ui/Image";
+import { Reveal } from "@/components/ui/Reveal";
 import { blogPosts } from "@/data/blog";
 import { buildMetadata } from "@/lib/metadata";
 
@@ -23,25 +24,26 @@ export default function BlogPage() {
         description="Straightforward guides on how our services and pricing work."
       />
       <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {blogPosts.map((post) => (
-          <Link
-            key={post.slug}
-            href={`/blog/${post.slug}`}
-            className="group overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-line)] bg-[var(--color-paper)] shadow-[var(--shadow-soft)] transition-shadow hover:shadow-[var(--shadow-lift)]"
-          >
-            <div className="relative h-44">
-              <Image
-                src={post.image}
-                alt=""
-                wrapperClassName="h-44"
-                className="transition-transform duration-500 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-5">
-              <h2 className="font-display text-lg text-[var(--color-ink)]">{post.title}</h2>
-              <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-muted)]">{post.excerpt}</p>
-            </div>
-          </Link>
+        {blogPosts.map((post, index) => (
+          <Reveal key={post.slug} delay={(index % 3) * 90}>
+            <Link
+              href={`/blog/${post.slug}`}
+              className="group block overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-line)] bg-[var(--color-paper)] shadow-[var(--shadow-soft)] transition-shadow hover:shadow-[var(--shadow-lift)]"
+            >
+              <div className="relative h-44">
+                <Image
+                  src={post.image}
+                  alt=""
+                  wrapperClassName="h-44"
+                  className="transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-5">
+                <h2 className="font-display text-lg text-[var(--color-ink)]">{post.title}</h2>
+                <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-muted)]">{post.excerpt}</p>
+              </div>
+            </Link>
+          </Reveal>
         ))}
       </div>
     </Section>

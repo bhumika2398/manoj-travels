@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { FleetGrid } from "./FleetGrid";
 import { EnquiryForm } from "@/components/booking/EnquiryForm";
+import { Reveal } from "@/components/ui/Reveal";
 import { cn } from "@/lib/utils";
 
 const SERVICE_TABS = [
@@ -37,11 +38,9 @@ export function FleetBookingExperience({ vehicles }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const activeTab = SERVICE_TABS.find((t) => t.value === activeService);
-  const filteredVehicles = useMemo(
-    () => vehicles.filter((v) => v.tripTypes.includes(activeTab.tripType)),
-    [vehicles, activeTab]
-  );
+  // Every vehicle in the fleet is shown for every service tab — the tab
+  // selected still drives which trip type the enquiry form below pre-fills.
+  const filteredVehicles = vehicles;
 
   const vehicleOptions = useMemo(
     () => vehicles.map((v) => ({ value: v.slug, label: `${v.name} (${v.capacity})` })),
@@ -90,13 +89,15 @@ export function FleetBookingExperience({ vehicles }) {
       </div>
 
       <div ref={formRef} className="mx-auto mt-16 max-w-2xl scroll-mt-28">
-        <EnquiryForm
-          key={`${activeService}-${selectedVehicleSlug || "none"}`}
-          title="Complete Your Booking"
-          defaultTripType={activeService}
-          defaultVehicle={selectedVehicleSlug || ""}
-          vehicleOptions={vehicleOptions}
-        />
+        <Reveal>
+          <EnquiryForm
+            key={`${activeService}-${selectedVehicleSlug || "none"}`}
+            title="Complete Your Booking"
+            defaultTripType={activeService}
+            defaultVehicle={selectedVehicleSlug || ""}
+            vehicleOptions={vehicleOptions}
+          />
+        </Reveal>
       </div>
     </div>
   );

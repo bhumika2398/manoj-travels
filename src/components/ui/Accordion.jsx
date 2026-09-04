@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useId } from "react";
+import { Reveal } from "./Reveal";
 import { cn } from "@/lib/utils";
 
 export function Accordion({ items, className, allowMultiple = false }) {
@@ -20,7 +21,7 @@ export function Accordion({ items, className, allowMultiple = false }) {
   };
 
   return (
-    <div className={cn("divide-y divide-[var(--color-line)]", className)}>
+    <Reveal as="div" className={cn("divide-y divide-[var(--color-line)]", className)}>
       {items.map((item, index) => {
         const isOpen = open.has(index);
         const panelId = `${baseId}-panel-${index}`;
@@ -66,6 +67,6 @@ export function Accordion({ items, className, allowMultiple = false }) {
           </div>
         );
       })}
-    </div>
+    </Reveal>
   );
 }

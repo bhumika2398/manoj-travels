@@ -1,8 +1,8 @@
 export const TRIP_TYPES = [
   { value: "one-way", label: "One Way" },
-  { value: "round-trip", label: "Round Trip" },
+  { value: "round-trip", label: "Outstation / Round Trip" },
   { value: "local", label: "Local" },
-  { value: "airport", label: "Airport Transfer" },
+  { value: "airport", label: "Airport" },
   { value: "tour-package", label: "Tour Package" },
 ];
 

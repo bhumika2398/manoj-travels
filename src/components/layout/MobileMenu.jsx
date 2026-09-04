@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { mainNav } from "@/config/navigation.config";
 import { business } from "@/config/business.config";
 import { Logo } from "./Logo";
@@ -11,6 +12,8 @@ import { CallButton } from "@/components/common/CallButton";
 import { cn } from "@/lib/utils";
 
 export function MobileMenu({ open, onClose }) {
+  const pathname = usePathname();
+
   useEffect(() => {
     if (!open) return;
     document.body.style.overflow = "hidden";
@@ -22,7 +25,7 @@ export function MobileMenu({ open, onClose }) {
   return (
     <div
       className={cn(
-        "fixed inset-0 z-[60] flex flex-col overflow-y-auto bg-[var(--color-paper)] transition-transform duration-500 ease-out lg:hidden",
+        "fixed inset-0 z-[60] flex flex-col overflow-y-auto bg-[var(--color-paper)] transition-transform duration-500 ease-out 2xl:hidden",
         open ? "translate-x-0" : "translate-x-full pointer-events-none"
       )}
       role="dialog"
@@ -44,12 +47,18 @@ export function MobileMenu({ open, onClose }) {
       </div>
 
       <nav className="flex flex-1 flex-col gap-1 px-5 py-8">
-        {mainNav.map((item) => (
+        {mainNav.map((item) => {
+          const isActive = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
+          return (
           <div key={item.href}>
             <Link
               href={item.href}
               onClick={onClose}
-              className="block py-3 font-display text-2xl font-semibold text-[var(--color-ink)]"
+              aria-current={isActive ? "page" : undefined}
+              className={cn(
+                "block py-3 font-display text-2xl font-semibold transition-colors duration-200",
+                isActive ? "text-[var(--color-accent-2)]" : "text-[var(--color-ink)] hover:text-[var(--color-accent-2)]"
+              )}
             >
               {item.label}
             </Link>
@@ -60,7 +69,7 @@ export function MobileMenu({ open, onClose }) {
                     key={child.href}
                     href={child.href}
                     onClick={onClose}
-                    className="py-2 text-base text-[var(--color-text-muted)] hover:text-[var(--color-accent-2)]"
+                    className="py-2 text-base text-[var(--color-text-muted)] transition-colors duration-200 hover:text-[var(--color-accent-2)]"
                   >
                     {child.label}
                   </Link>
@@ -68,7 +77,8 @@ export function MobileMenu({ open, onClose }) {
               </div>
             )}
           </div>
-        ))}
+          );
+        })}
       </nav>
 
       <div className="grid grid-cols-1 gap-3 px-5 pb-8 pt-4">

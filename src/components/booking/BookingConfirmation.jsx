@@ -6,7 +6,7 @@ export function BookingConfirmation({ className }) {
   return (
     <div
       className={cn(
-        "glass-light w-full rounded-[var(--radius-lg)] p-8 text-center shadow-[var(--shadow-lift)]",
+        "animate-fade-up glass-light w-full rounded-[var(--radius-lg)] p-8 text-center shadow-[var(--shadow-lift)]",
         className
       )}
     >

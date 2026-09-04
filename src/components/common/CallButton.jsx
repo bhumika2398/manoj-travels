@@ -25,11 +25,11 @@ export function CallButton({
         href={href}
         aria-label="Call Manoj Tours and Travels"
         className={cn(
-          "flex h-14 w-14 items-center justify-center rounded-full bg-[var(--color-ink)] text-[var(--color-text-on-dark)] shadow-[var(--shadow-lift)] transition-transform duration-200 hover:scale-105",
+          "glass-accent flex h-16 w-16 items-center justify-center rounded-full text-[var(--color-text-on-dark)] shadow-[var(--shadow-lift)] transition-transform duration-200 hover:scale-105 active:scale-95",
           className
         )}
       >
-        <PhoneIcon className="h-6 w-6" />
+        <PhoneIcon className="h-7 w-7" />
       </a>
     );
   }
@@ -38,7 +38,7 @@ export function CallButton({
     <a
       href={href}
       className={cn(
-        "inline-flex items-center justify-center gap-2 rounded-[var(--radius-sm)] bg-[var(--color-ink)] px-6 py-3.5 text-[16px] font-medium text-[var(--color-text-on-dark)] shadow-[var(--shadow-soft)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[var(--shadow-lift)]",
+        "inline-flex items-center justify-center gap-2 rounded-[var(--radius-sm)] bg-[var(--color-ink)] px-6 py-3.5 text-[16px] font-medium text-[var(--color-text-on-dark)] shadow-[var(--shadow-soft)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[var(--shadow-lift)] active:translate-y-0 active:scale-[0.98]",
         className
       )}
     >

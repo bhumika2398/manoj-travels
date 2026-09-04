@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { PricingCard } from "./PricingCard";
 import { Button } from "@/components/ui/Button";
+import { Reveal } from "@/components/ui/Reveal";
 import { oneWayPricing, localPricing, roundTripPricing, airportPricing, pricingNotes } from "@/data/pricing";
 import { cn } from "@/lib/utils";
 
@@ -58,8 +59,10 @@ export function PricingSelector({ className, defaultTab = "one-way" }) {
           </div>
         ) : (
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {tab.data.map((tier) => (
-              <PricingCard key={tier.id} tier={tier} type={tab.value} />
+            {tab.data.map((tier, index) => (
+              <Reveal key={tier.id} delay={(index % 3) * 90}>
+                <PricingCard tier={tier} type={tab.value} />
+              </Reveal>
             ))}
           </div>
         )}

@@ -2,11 +2,13 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { mainNav } from "@/config/navigation.config";
 import { cn } from "@/lib/utils";
 
 export function Navigation({ tone = "dark" }) {
   const [openMenu, setOpenMenu] = useState(null);
+  const pathname = usePathname();
 
   const linkTone =
     tone === "dark"
@@ -14,8 +16,10 @@ export function Navigation({ tone = "dark" }) {
       : "text-[var(--color-text-on-dark)]/80 hover:text-[var(--color-text-on-dark)]";
 
   return (
-    <ul className="hidden shrink-0 items-center gap-0.5 lg:flex">
-      {mainNav.map((item) => (
+    <ul className="hidden shrink-0 items-center gap-0.5 2xl:flex">
+      {mainNav.map((item) => {
+        const isActive = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
+        return (
         <li
           key={item.href}
           className="relative"
@@ -25,11 +29,12 @@ export function Navigation({ tone = "dark" }) {
           <Link
             href={item.href}
             className={cn(
-              "flex items-center gap-1 whitespace-nowrap rounded-[var(--radius-sm)] px-2 py-2.5 text-[17px] font-medium transition-colors duration-200 xl:px-2.5",
+              "relative flex items-center gap-1 whitespace-nowrap rounded-[var(--radius-sm)] px-2 py-2.5 text-[17px] font-medium transition-colors duration-200 xl:px-2.5",
               linkTone
             )}
             aria-haspopup={item.children ? "true" : undefined}
             aria-expanded={item.children ? openMenu === item.href : undefined}
+            aria-current={isActive ? "page" : undefined}
           >
             {item.label}
             {item.children && (
@@ -44,6 +49,13 @@ export function Navigation({ tone = "dark" }) {
                 <path d="M3 4.5 6 8l3-3.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             )}
+            <span
+              aria-hidden="true"
+              className={cn(
+                "absolute inset-x-2 -bottom-0.5 h-[2px] origin-left scale-x-0 rounded-full bg-current transition-transform duration-300 ease-out",
+                isActive && "scale-x-100"
+              )}
+            />
           </Link>
 
           {item.children && (
@@ -74,7 +86,8 @@ export function Navigation({ tone = "dark" }) {
             </div>
           )}
         </li>
-      ))}
+        );
+      })}
     </ul>
   );
 }

@@ -1,6 +1,7 @@
 import { Image } from "@/components/ui/Image";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
+import { Reveal } from "@/components/ui/Reveal";
 import { WhatsAppButton } from "@/components/common/WhatsAppButton";
 import { oneWayPricing, localPricing, roundTripPricing } from "@/data/pricing";
 import { formatINR } from "@/lib/utils";
@@ -14,7 +15,7 @@ export function VehicleDetails({ vehicle }) {
 
   return (
     <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16">
-      <div className="relative flex h-80 items-center justify-center rounded-[var(--radius-lg)] border border-[var(--color-line)] bg-[var(--color-paper-2)] p-8 lg:h-[26rem]">
+      <Reveal variant="scale" className="relative flex h-80 items-center justify-center rounded-[var(--radius-lg)] border border-[var(--color-line)] bg-[var(--color-paper-2)] p-8 lg:h-[26rem]">
         <Image
           src={vehicle.image}
           alt={`${vehicle.name} — ${vehicle.category}`}
@@ -22,9 +23,9 @@ export function VehicleDetails({ vehicle }) {
           className="object-contain"
           sizes="(min-width: 1024px) 40vw, 90vw"
         />
-      </div>
+      </Reveal>
 
-      <div>
+      <Reveal delay={120}>
         <Badge>{vehicle.category}</Badge>
         <h1 className="mt-4 text-h3 font-display text-[var(--color-ink)]">{vehicle.name}</h1>
         <p className="mt-2 text-[17px] text-[var(--color-text-muted)]">{vehicle.seatLabel}</p>
@@ -64,7 +65,7 @@ export function VehicleDetails({ vehicle }) {
             message={`Hello Manoj Tours and Travels, I would like to enquire about booking the ${vehicle.name}.`}
           />
         </div>
-      </div>
+      </Reveal>
     </div>
   );
 }

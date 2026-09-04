@@ -2,23 +2,18 @@ import Link from "next/link";
 import { Image } from "@/components/ui/Image";
 import { Card } from "@/components/ui/Card";
 
-export function ServiceCard({ service, index }) {
+export function ServiceCard({ service }) {
   return (
     <Card className="group overflow-hidden">
       <Link href={`/services/${service.slug}`} className="block">
-        <div className="relative h-56">
+        <div className="img-hover-sweep relative h-64 w-full overflow-hidden bg-[var(--color-paper-2)]">
           <Image
             src={service.heroImage}
             alt={`${service.name} — Manoj Tours and Travels`}
-            wrapperClassName="h-56"
-            className="transition-transform duration-700 ease-out group-hover:scale-105"
+            wrapperClassName="h-64 w-full"
+            className="object-cover object-bottom transition-transform duration-700 ease-out group-hover:scale-105"
+            sizes="(min-width: 1024px) 25vw, 50vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-ink)]/75 via-transparent to-transparent" />
-          {typeof index === "number" && (
-            <span className="glass-dark absolute left-4 top-4 flex h-9 w-9 items-center justify-center rounded-full font-display text-sm text-[var(--color-text-on-dark)]">
-              {String(index + 1).padStart(2, "0")}
-            </span>
-          )}
         </div>
         <div className="p-6">
           <h3 className="text-card-title font-display text-[var(--color-ink)]">{service.name}</h3>

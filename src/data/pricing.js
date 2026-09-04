@@ -122,7 +122,7 @@ export const roundTripPricing = [
 // prompt everywhere until exact rates are supplied.
 export const airportPricing = {
   available: false,
-  message: "Contact us for airport transfer pricing",
+  message: "Contact us for airport transfer pricing.",
 };
 
 export const pricingNotes = [

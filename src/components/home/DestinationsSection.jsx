@@ -4,8 +4,24 @@ import { DestinationEditorialGrid } from "@/components/destinations/DestinationE
 import { Button } from "@/components/ui/Button";
 import { destinations } from "@/data/destinations";
 
+// The original three local favourites, plus Mysore, Coorg, Madikeri,
+// Hassan and Chitradurga — every slug already exists in data/destinations.js
+// with a real image and its own /destinations/[slug] page.
+const FEATURED_SLUGS = [
+  "bangalore-palace",
+  "lalbagh",
+  "nandi-hills",
+  "mysore",
+  "coorg",
+  "madikeri",
+  "hassan",
+  "chitradurga",
+  "tirupati",
+  "murudeshwara",
+];
+
 export function DestinationsSection() {
-  const featured = destinations.slice(0, 3);
+  const featured = FEATURED_SLUGS.map((slug) => destinations.find((d) => d.slug === slug)).filter(Boolean);
 
   return (
     <Section tone="ink" id="destinations">

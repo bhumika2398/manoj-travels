@@ -9,7 +9,7 @@ import { business } from "@/config/business.config";
  */
 export function CTASection() {
   return (
-    <section className="texture-grain relative overflow-hidden bg-[var(--color-ink)] py-20 md:py-24">
+    <section className="texture-grain relative overflow-hidden bg-[var(--color-ink)] py-16 md:py-20">
       <div
         aria-hidden="true"
         className="absolute inset-0 bg-[radial-gradient(70%_60%_at_50%_0%,rgba(216,180,160,0.18)_0%,transparent_60%)]"

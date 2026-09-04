@@ -43,14 +43,16 @@ export function GalleryGrid({ items }) {
               onClick={() => setOpenIndex(i)}
               className="group relative block w-full overflow-hidden rounded-[var(--radius-lg)] shadow-[var(--shadow-soft)] transition-all duration-300 hover:shadow-[var(--shadow-lift)]"
             >
-              <NextImage
-                src={item.src}
-                alt={item.alt}
-                width={640}
-                height={480}
-                sizes="(min-width: 1024px) 32vw, (min-width: 640px) 48vw, 100vw"
-                className="h-auto w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              />
+              <div className="img-hover-sweep">
+                <NextImage
+                  src={item.src}
+                  alt={item.alt}
+                  width={640}
+                  height={480}
+                  sizes="(min-width: 1024px) 32vw, (min-width: 640px) 48vw, 100vw"
+                  className="h-auto w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+              </div>
               <div className="absolute inset-0 flex items-end bg-gradient-to-t from-[var(--color-ink)]/60 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <span className="p-4 text-[14px] font-medium text-[var(--color-text-on-dark)]">{item.category}</span>
               </div>

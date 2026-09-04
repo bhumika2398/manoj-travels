@@ -24,7 +24,7 @@ export function DateTimeFields({ tripType, values, onChange }) {
   return (
     <>
       <FormField label="Travel Date" name="date" type="date" required value={values.date} onChange={set("date")} />
-      {tripType === "round-trip" || tripType === "tour-package" ? (
+      {(tripType === "round-trip" || tripType === "tour-package") && (
         <FormField
           label="Return Date"
           name="returnDate"
@@ -32,9 +32,8 @@ export function DateTimeFields({ tripType, values, onChange }) {
           value={values.returnDate}
           onChange={set("returnDate")}
         />
-      ) : (
-        <FormField label="Time" name="time" type="time" value={values.time} onChange={set("time")} />
       )}
+      <FormField label="Time" name="time" type="time" value={values.time} onChange={set("time")} />
     </>
   );
 }

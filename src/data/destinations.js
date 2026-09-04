@@ -76,6 +76,16 @@ export const destinations = [
       "Karnataka's coffee and cardamom hill country, with waterfalls, plantations and cool weather — ideal for a relaxed multi-day round trip.",
   },
   {
+    slug: "madikeri",
+    name: "Madikeri",
+    region: "Karnataka",
+    image: "/images/destinations/madikeri.png",
+    approxDistanceKm: 250,
+    idealTripType: "Round Trip / Tour Package",
+    description:
+      "The misty hill town at the heart of Coorg, with Abbey Falls, Raja's Seat and Madikeri Fort nearby — a natural base for a Coorg round trip.",
+  },
+  {
     slug: "hassan",
     name: "Hassan",
     region: "Karnataka",

@@ -40,12 +40,12 @@ export function AdminSidebar({ className, onNavigate }) {
   return (
     <nav className={cn("flex h-full flex-col gap-1 p-4", className)}>
       <Link href="/admin" onClick={onNavigate} className="mb-4 flex items-center gap-2 px-2 py-2">
-        <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-900 text-sm font-semibold text-white">
+        <span className="flex h-8 w-8 items-center justify-center rounded-[var(--radius-md)] bg-[var(--color-ink)] text-sm font-semibold text-[var(--color-text-on-dark)]">
           M
         </span>
         <span>
-          <span className="block text-sm font-semibold text-gray-900">Manoj Admin</span>
-          <span className="block text-xs text-gray-500">Content dashboard</span>
+          <span className="block text-sm font-semibold text-[var(--color-ink)]">Manoj Admin</span>
+          <span className="block text-xs text-[var(--color-text-muted)]">Content dashboard</span>
         </span>
       </Link>
 
@@ -57,8 +57,8 @@ export function AdminSidebar({ className, onNavigate }) {
             href={item.href}
             onClick={onNavigate}
             className={cn(
-              "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors",
-              active ? "bg-gray-900 text-white" : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
+              "flex items-center gap-3 rounded-[var(--radius-md)] px-3 py-2.5 text-sm font-medium transition-colors",
+              active ? "bg-[var(--color-ink)] text-[var(--color-text-on-dark)]" : "text-[var(--color-text-muted)] hover:bg-[var(--color-paper-2)] hover:text-[var(--color-ink)]"
             )}
           >
             <Icon name={item.icon} className="h-[18px] w-[18px] shrink-0" />
@@ -69,7 +69,7 @@ export function AdminSidebar({ className, onNavigate }) {
 
       <Link
         href="/"
-        className="mt-auto flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-900"
+        className="mt-auto flex items-center gap-3 rounded-[var(--radius-md)] px-3 py-2.5 text-sm font-medium text-[var(--color-text-muted)] hover:bg-[var(--color-paper-2)] hover:text-[var(--color-ink)]"
       >
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" className="h-[18px] w-[18px]" aria-hidden="true">
           <path strokeLinecap="round" strokeLinejoin="round" d="M10 19l-7-7 7-7M3 12h18" />

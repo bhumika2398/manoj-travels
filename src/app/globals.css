@@ -254,9 +254,9 @@ p {
   border: 1px solid rgba(245, 240, 234, 0.14);
 }
 .glass-nav {
-  background: rgba(245, 240, 234, 0.88);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgb(245, 240, 234);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(200, 183, 156, 0.3);
 }
 .glass-accent {
@@ -386,4 +386,71 @@ p {
     animation: none !important;
     opacity: 0 !important;
   }
+}
+
+/* ---------------------------------------------------------------------- */
+/* CINEMATIC MOTION LAYER — Ken Burns drift, mask-reveal images, hover      */
+/* shine-sweep. All transform/opacity only; gated in JS (useKenBurns) to    */
+/* skip on reduced-motion and smaller/low-power devices, and here again as  */
+/* a hard CSS fallback so nothing ever spins or drifts for those visitors.  */
+/* ---------------------------------------------------------------------- */
+@keyframes kenburns {
+  0% { transform: scale(1) translate3d(0, 0, 0); }
+  100% { transform: scale(1.07) translate3d(-0.5%, -1%, 0); }
+}
+.kenburns {
+  animation: kenburns 16s cubic-bezier(0.16, 1, 0.3, 1) infinite alternate both;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .kenburns { animation: none !important; }
+}
+
+/* Mask-reveal — a curtain panel sweeps away to uncover a large editorial
+   photograph the first time it nears the viewport, while the image itself
+   settles from a slight zoom. Used sparingly, on a few standalone editorial
+   photos only — not a card/grid treatment. */
+.mask-reveal-curtain {
+  transform: scaleX(1);
+  transform-origin: right center;
+  transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+.mask-reveal-curtain.is-visible {
+  transform: scaleX(0);
+}
+.mask-reveal-image {
+  transform: scale(1.12);
+  transition: transform 1.15s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+.mask-reveal-image.is-visible {
+  transform: scale(1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .mask-reveal-curtain { transition: none !important; transform: scaleX(0) !important; }
+  .mask-reveal-image { transition: none !important; transform: scale(1) !important; }
+}
+
+/* Hover shine-sweep — a soft diagonal highlight passes across an image on
+   hover, a quieter alternative to a second zoom layer. Pure transform, and
+   only runs on hover so it never competes with scroll animations. */
+.img-hover-sweep {
+  position: relative;
+  overflow: hidden;
+}
+.img-hover-sweep::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 40%, rgba(255, 255, 255, 0.22) 50%, transparent 60%);
+  transform: translateX(-120%);
+  transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+.img-hover-sweep:hover::after {
+  transform: translateX(120%);
+}
+@media (prefers-reduced-motion: reduce) {
+  .img-hover-sweep::after { transition: none !important; }
 }

@@ -115,7 +115,7 @@ export function EnquiryForm({
         {status === "submitting" ? "Sending…" : "Submit Enquiry"}
       </Button>
       {status === "error" && (
-        <p className="mt-3 text-sm text-[var(--color-danger)]">
+        <p className="animate-fade-in mt-3 text-sm text-[var(--color-danger)]">
           Something went wrong — please call or WhatsApp us instead.
         </p>
       )}

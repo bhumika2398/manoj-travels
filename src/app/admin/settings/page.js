@@ -17,31 +17,31 @@ export default function AdminSettingsPage() {
       <AdminTopbar title="Site Settings" />
       <div className="p-4 md:p-8">
         <AdminCard className="mb-6">
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-[var(--color-text-muted)]">
             Single source of truth:{" "}
-            <code className="rounded bg-gray-100 px-1 py-0.5 text-[13px]">src/config/business.config.js</code>.
+            <code className="rounded bg-[var(--color-paper-2)] px-1 py-0.5 text-[13px]">src/config/business.config.js</code>.
             Editing values from this screen is disabled until it&rsquo;s wired to an authenticated write API —
             change the file directly (and redeploy) for now.
           </p>
         </AdminCard>
 
         <AdminCard>
-          <dl className="divide-y divide-gray-100">
+          <dl className="divide-y divide-[var(--color-line)]">
             {FIELDS.map((f) => (
               <div key={f.label} className="grid grid-cols-1 gap-1 py-4 sm:grid-cols-3 sm:items-center sm:gap-4">
-                <dt className="text-sm font-medium text-gray-500">{f.label}</dt>
+                <dt className="text-sm font-medium text-[var(--color-text-muted)]">{f.label}</dt>
                 <dd className="sm:col-span-2">
                   <input
                     readOnly
                     value={f.value}
-                    className="w-full cursor-not-allowed rounded-lg border border-gray-200 bg-gray-50 px-3 py-2.5 text-sm text-gray-700"
+                    className="w-full cursor-not-allowed rounded-[var(--radius-md)] border border-[var(--color-line)] bg-[var(--color-paper-2)] px-3 py-2.5 text-sm text-[var(--color-text)]"
                   />
                 </dd>
               </div>
             ))}
             <div className="grid grid-cols-1 gap-1 py-4 sm:grid-cols-3 sm:items-center sm:gap-4">
-              <dt className="text-sm font-medium text-gray-500">Social Links</dt>
-              <dd className="sm:col-span-2 text-sm text-gray-400">
+              <dt className="text-sm font-medium text-[var(--color-text-muted)]">Social Links</dt>
+              <dd className="sm:col-span-2 text-sm text-[var(--color-text-muted)]">
                 None on file — nothing is shown on the public site until real profile links are supplied.
               </dd>
             </div>

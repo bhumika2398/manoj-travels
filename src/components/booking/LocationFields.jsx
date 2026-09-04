@@ -7,7 +7,18 @@ export function LocationFields({ tripType, values, onChange }) {
   const set = (field) => (e) => onChange(field, e.target.value);
 
   if (tripType === "local") {
-    return null; // local trips use hours/km, not locations
+    // Local trips are billed as an hourly/km package (see DateTimeFields),
+    // but still need a pickup point — also required by validateEnquiry().
+    return (
+      <FormField
+        label="Pickup Location"
+        name="pickup"
+        placeholder="Bangalore"
+        required
+        value={values.pickup}
+        onChange={set("pickup")}
+      />
+    );
   }
 
   if (tripType === "round-trip" || tripType === "tour-package") {
@@ -22,7 +33,7 @@ export function LocationFields({ tripType, values, onChange }) {
           onChange={set("pickup")}
         />
         <FormField
-          label={tripType === "tour-package" ? "Destination" : "Destination"}
+          label="Destination"
           name="destination"
           placeholder="e.g. Ooty, Coorg, Mysore"
           required

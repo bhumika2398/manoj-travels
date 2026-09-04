@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { Section } from "@/components/ui/Section";
 import { Breadcrumbs } from "@/components/common/Breadcrumbs";
 import { Image } from "@/components/ui/Image";
+import { Reveal } from "@/components/ui/Reveal";
 import { ArticleSchema } from "@/components/seo/ArticleSchema";
 import { ServiceCTA } from "@/components/services/ServiceCTA";
 import { blogPosts, getBlogPostBySlug } from "@/data/blog";
@@ -35,17 +36,19 @@ export default function BlogPostPage({ params }) {
         ]}
       />
       <div className="mx-auto mt-8 max-w-3xl">
-        <h1 className="font-display text-3xl text-[var(--color-ink)] md:text-4xl">{post.title}</h1>
-        <div className="relative mt-6 h-64 overflow-hidden rounded-[var(--radius-lg)] md:h-96">
-          <Image src={post.image} alt="" wrapperClassName="h-full" />
-        </div>
-        <div className="prose-content mt-8 space-y-5">
-          {post.content.map((paragraph, i) => (
-            <p key={i} className="leading-relaxed text-[var(--color-text-muted)]">
-              {paragraph}
-            </p>
-          ))}
-        </div>
+        <Reveal>
+          <h1 className="font-display text-3xl text-[var(--color-ink)] md:text-4xl">{post.title}</h1>
+          <div className="relative mt-6 h-64 overflow-hidden rounded-[var(--radius-lg)] md:h-96">
+            <Image src={post.image} alt="" wrapperClassName="h-full" />
+          </div>
+          <div className="prose-content mt-8 space-y-5">
+            {post.content.map((paragraph, i) => (
+              <p key={i} className="leading-relaxed text-[var(--color-text-muted)]">
+                {paragraph}
+              </p>
+            ))}
+          </div>
+        </Reveal>
 
         {relatedService && (
           <div className="mt-12">

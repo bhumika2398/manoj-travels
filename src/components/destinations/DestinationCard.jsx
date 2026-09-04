@@ -13,12 +13,14 @@ export function DestinationCard({ destination, className }) {
       href={`/destinations/${destination.slug}`}
       className={`group relative block aspect-square w-full overflow-hidden rounded-[1.5rem] shadow-[var(--shadow-soft)] transition-shadow duration-500 hover:shadow-[var(--shadow-lift)] ${className || ""}`}
     >
-      <Image
-        src={destination.image}
-        alt={`${destination.name} — travel with Manoj Tours and Travels`}
-        wrapperClassName="h-full"
-        className="transition-transform duration-700 ease-out group-hover:scale-110"
-      />
+      <div className="img-hover-sweep h-full w-full">
+        <Image
+          src={destination.image}
+          alt={`${destination.name} — travel with Manoj Tours and Travels`}
+          wrapperClassName="h-full"
+          className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+        />
+      </div>
       <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-ink)]/70 via-[var(--color-ink)]/10 to-transparent" />
 
       <div className="absolute inset-x-0 bottom-0 flex flex-col items-center gap-3 p-5 text-center sm:gap-4 sm:p-6">

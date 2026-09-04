@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 export function AdminCard({ className, children }) {
   return (
-    <div className={cn("rounded-xl border border-gray-200 bg-white p-5 shadow-sm", className)}>
+    <div className={cn("glass-light rounded-[var(--radius-lg)] p-5", className)}>
       {children}
     </div>
   );
@@ -11,10 +11,10 @@ export function AdminCard({ className, children }) {
 
 export function AdminStat({ label, value, href, hint }) {
   const content = (
-    <AdminCard className={href ? "transition-colors hover:border-gray-300" : undefined}>
-      <p className="text-sm font-medium text-gray-500">{label}</p>
-      <p className="mt-2 text-3xl font-semibold text-gray-900">{value}</p>
-      {hint && <p className="mt-1 text-xs text-gray-400">{hint}</p>}
+    <AdminCard className={href ? "transition-colors hover:border-[var(--color-taupe-soft)]" : undefined}>
+      <p className="text-sm font-medium text-[var(--color-text-muted)]">{label}</p>
+      <p className="mt-2 text-3xl font-semibold text-[var(--color-ink)]">{value}</p>
+      {hint && <p className="mt-1 text-xs text-[var(--color-text-muted)]">{hint}</p>}
     </AdminCard>
   );
 
@@ -25,7 +25,7 @@ export function StatusBadge({ status }) {
   const styles = {
     new: "bg-amber-50 text-amber-700 border-amber-200",
     contacted: "bg-blue-50 text-blue-700 border-blue-200",
-    closed: "bg-gray-100 text-gray-600 border-gray-200",
+    closed: "bg-[var(--color-paper-2)] text-[var(--color-text-muted)] border-[var(--color-line)]",
   };
   return (
     <span className={cn("inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-medium capitalize", styles[status] || styles.new)}>
