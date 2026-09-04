@@ -1,0 +1,85 @@
+"use client";
+
+import { useEffect } from "react";
+import Link from "next/link";
+import { mainNav } from "@/config/navigation.config";
+import { business } from "@/config/business.config";
+import { Logo } from "./Logo";
+import { Button } from "@/components/ui/Button";
+import { WhatsAppButton } from "@/components/common/WhatsAppButton";
+import { CallButton } from "@/components/common/CallButton";
+import { cn } from "@/lib/utils";
+
+export function MobileMenu({ open, onClose }) {
+  useEffect(() => {
+    if (!open) return;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
+  return (
+    <div
+      className={cn(
+        "fixed inset-0 z-[60] flex flex-col overflow-y-auto bg-[var(--color-paper)] transition-transform duration-500 ease-out lg:hidden",
+        open ? "translate-x-0" : "translate-x-full pointer-events-none"
+      )}
+      role="dialog"
+      aria-modal="true"
+      aria-label="Site menu"
+    >
+      <div className="flex items-center justify-between border-b border-[var(--color-line)] px-5 py-4">
+        <Logo tone="dark" />
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label="Close menu"
+          className="flex h-11 w-11 items-center justify-center rounded-full border border-[var(--color-line-accent)] text-[var(--color-ink)]"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className="h-5 w-5" aria-hidden="true">
+            <path strokeLinecap="round" d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+      </div>
+
+      <nav className="flex flex-1 flex-col gap-1 px-5 py-8">
+        {mainNav.map((item) => (
+          <div key={item.href}>
+            <Link
+              href={item.href}
+              onClick={onClose}
+              className="block py-3 font-display text-2xl font-semibold text-[var(--color-ink)]"
+            >
+              {item.label}
+            </Link>
+            {item.children && (
+              <div className="mb-3 ml-1 flex flex-col gap-1 border-l border-[var(--color-line-accent)] pl-4">
+                {item.children.map((child) => (
+                  <Link
+                    key={child.href}
+                    href={child.href}
+                    onClick={onClose}
+                    className="py-2 text-base text-[var(--color-text-muted)] hover:text-[var(--color-accent-2)]"
+                  >
+                    {child.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </nav>
+
+      <div className="grid grid-cols-1 gap-3 px-5 pb-8 pt-4">
+        <Button href="/fleet" variant="accent" size="lg" onClick={onClose} className="w-full">
+          Book Now
+        </Button>
+        <div className="grid grid-cols-2 gap-3">
+          <CallButton label={`Call ${business.phone.primaryDisplay}`} className="w-full" />
+          <WhatsAppButton label="WhatsApp" className="w-full" />
+        </div>
+      </div>
+    </div>
+  );
+}
