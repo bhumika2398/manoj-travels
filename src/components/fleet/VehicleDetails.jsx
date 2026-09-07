@@ -3,14 +3,14 @@ import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { WhatsAppButton } from "@/components/common/WhatsAppButton";
-import { oneWayPricing, localPricing, roundTripPricing } from "@/data/pricing";
+import { getPricing } from "@/lib/siteContent";
 import { formatINR } from "@/lib/utils";
 
-const ALL_PRICING = [...oneWayPricing, ...localPricing, ...roundTripPricing];
-
-export function VehicleDetails({ vehicle }) {
+export async function VehicleDetails({ vehicle }) {
+  const pricing = await getPricing();
+  const allPricing = [...pricing.oneWayPricing, ...pricing.localPricing, ...pricing.roundTripPricing];
   const tiers = vehicle.pricingIds
-    .map((id) => ALL_PRICING.find((p) => p.id === id))
+    .map((id) => allPricing.find((p) => p.id === id))
     .filter(Boolean);
 
   return (

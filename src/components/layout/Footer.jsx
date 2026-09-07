@@ -1,10 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { WhatsAppButton } from "@/components/common/WhatsAppButton";
 import { CallButton } from "@/components/common/CallButton";
 import { Logo } from "./Logo";
 import { footerNav } from "@/config/navigation.config";
-import { business, mapsLink } from "@/config/business.config";
+import { useBusinessInfo } from "@/components/common/SiteDataProvider";
 import { cn } from "@/lib/utils";
 
 // Small, consistent line-style icons for the contact column — same stroke
@@ -41,6 +43,8 @@ function ContactLine({ icon, children, className, ...props }) {
 }
 
 export function Footer() {
+  const business = useBusinessInfo();
+  const mapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(business.address.full)}`;
   const year = new Date().getFullYear();
   const iconClass = "h-[1.05em] w-[1.05em]";
 

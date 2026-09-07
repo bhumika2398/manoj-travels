@@ -1,12 +1,10 @@
 import Link from "next/link";
 import { AdminTopbar } from "@/components/admin/AdminTopbar";
-import { AdminNotice } from "@/components/admin/AdminNotice";
 import { AdminCard, AdminStat, StatusBadge } from "@/components/admin/AdminCard";
 import { readEnquiries } from "@/lib/enquiryStore";
 import { fleet } from "@/data/fleet";
 import { destinations } from "@/data/destinations";
-import { services } from "@/data/services";
-import { blogPosts } from "@/data/blog";
+import { hasSupabase } from "@/lib/supabase/admin";
 
 export const dynamic = "force-dynamic";
 
@@ -14,19 +12,25 @@ export default async function AdminDashboard() {
   const enquiries = await readEnquiries();
   const recent = enquiries.slice(0, 6);
   const newCount = enquiries.filter((e) => (e.status || "new") === "new").length;
+  const supabaseReady = hasSupabase();
 
   return (
     <>
       <AdminTopbar title="Dashboard" />
       <div className="p-4 md:p-8">
-        <AdminNotice />
+        {!supabaseReady && (
+          <div className="mb-6 rounded-[var(--radius-lg)] border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
+            <strong className="font-semibold">Setup needed:</strong> Supabase environment
+            variables are not configured — enquiries, pricing, website info and image uploads
+            won&rsquo;t be saved. See the project README for setup steps.
+          </div>
+        )}
 
-        <div className="grid grid-cols-2 gap-4 lg:grid-cols-5">
+        <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
           <AdminStat label="New Enquiries" value={newCount} href="/admin/enquiries" hint={`${enquiries.length} total`} />
-          <AdminStat label="Fleet Vehicles" value={fleet.length} href="/admin/fleet" />
-          <AdminStat label="Destinations" value={destinations.length} href="/admin/destinations" />
-          <AdminStat label="Services" value={services.length} href="/admin/services" />
-          <AdminStat label="Blog Articles" value={blogPosts.length} href="/admin/blog" />
+          <AdminStat label="Fleet Vehicles" value={fleet.length} href="/admin/images" />
+          <AdminStat label="Destinations" value={destinations.length} href="/admin/images" />
+          <AdminStat label="Pricing Tiers" value="Edit" href="/admin/pricing" />
         </div>
 
         <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
@@ -79,12 +83,10 @@ export default async function AdminDashboard() {
             <h2 className="text-base font-semibold text-[var(--color-ink)]">Quick Links</h2>
             <ul className="mt-4 space-y-2 text-sm">
               {[
-                { href: "/admin/fleet", label: "Manage fleet vehicles" },
-                { href: "/admin/destinations", label: "Manage destinations" },
-                { href: "/admin/videos", label: "Manage hero & section videos" },
-                { href: "/admin/services", label: "Review services & pricing" },
-                { href: "/admin/blog", label: "Manage blog articles" },
-                { href: "/admin/settings", label: "Edit site settings" },
+                { href: "/admin/images", label: "Manage images" },
+                { href: "/admin/pricing", label: "Manage pricing" },
+                { href: "/admin/enquiries", label: "View enquiries" },
+                { href: "/admin/settings", label: "Edit website information" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link href={l.href} className="flex items-center justify-between rounded-[var(--radius-md)] px-3 py-2.5 text-[var(--color-text)] hover:bg-[var(--color-paper-2)]">

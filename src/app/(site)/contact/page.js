@@ -6,7 +6,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { CallButton } from "@/components/common/CallButton";
 import { WhatsAppButton } from "@/components/common/WhatsAppButton";
-import { business, mapsLink } from "@/config/business.config";
+import { getBusinessInfo } from "@/lib/siteContent";
 import { buildMetadata } from "@/lib/metadata";
 
 export const metadata = buildMetadata({
@@ -16,30 +16,33 @@ export const metadata = buildMetadata({
   path: "/contact",
 });
 
-const details = [
-  {
-    label: "Primary Phone",
-    value: business.phone.primaryDisplay,
-    href: `tel:+91${business.phone.primary}`,
-  },
-  {
-    label: "Alternate Phone",
-    value: business.phone.secondaryDisplay,
-    href: `tel:+91${business.phone.secondary}`,
-  },
-  {
-    label: "Email",
-    value: business.email,
-    href: `mailto:${business.email}`,
-  },
-  {
-    label: "Address",
-    value: business.address.full,
-    href: mapsLink,
-  },
-];
+export default async function ContactPage() {
+  const business = await getBusinessInfo();
+  const mapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(business.address.full)}`;
 
-export default function ContactPage() {
+  const details = [
+    {
+      label: "Primary Phone",
+      value: business.phone.primaryDisplay,
+      href: `tel:+91${business.phone.primary}`,
+    },
+    {
+      label: "Alternate Phone",
+      value: business.phone.secondaryDisplay,
+      href: `tel:+91${business.phone.secondary}`,
+    },
+    {
+      label: "Email",
+      value: business.email,
+      href: `mailto:${business.email}`,
+    },
+    {
+      label: "Address",
+      value: business.address.full,
+      href: mapsLink,
+    },
+  ];
+
   return (
     <>
       <ContactHero />

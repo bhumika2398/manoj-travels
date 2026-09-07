@@ -1,17 +1,27 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingActions } from "@/components/common/FloatingActions";
+import { WelcomePopup } from "@/components/common/WelcomePopup";
 import { ScrollToTop } from "@/components/common/ScrollToTop";
+import { SiteDataProvider } from "@/components/common/SiteDataProvider";
 import { OrganizationSchema } from "@/components/seo/OrganizationSchema";
 import { WebSiteSchema } from "@/components/seo/WebSiteSchema";
 import { LocalBusinessSchema } from "@/components/seo/LocalBusinessSchema";
+import { getBusinessInfo, getImageOverrides } from "@/lib/siteContent";
+
+// Re-checked periodically so admin edits (pricing, images, business info)
+// reach the public site without a full redeploy; the admin API routes also
+// call revalidatePath on save, so changes usually appear immediately.
+export const revalidate = 60;
 
 // Chrome shared by every public marketing page — deliberately scoped to
 // this (site) route group so /admin gets its own, unrelated shell instead
 // of inheriting the navbar/footer/floating actions.
-export default function SiteLayout({ children }) {
+export default async function SiteLayout({ children }) {
+  const [businessInfo, imageOverrides] = await Promise.all([getBusinessInfo(), getImageOverrides()]);
+
   return (
-    <>
+    <SiteDataProvider businessInfo={businessInfo} imageOverrides={imageOverrides}>
       <OrganizationSchema />
       <WebSiteSchema />
       <LocalBusinessSchema />
@@ -26,6 +36,7 @@ export default function SiteLayout({ children }) {
       <main id="main-content">{children}</main>
       <Footer />
       <FloatingActions />
-    </>
+      <WelcomePopup />
+    </SiteDataProvider>
   );
 }

@@ -1,4 +1,6 @@
-import { whatsappLink } from "@/config/business.config";
+"use client";
+
+import { useBusinessInfo } from "@/components/common/SiteDataProvider";
 import { cn } from "@/lib/utils";
 
 const WhatsAppIcon = (props) => (
@@ -17,7 +19,12 @@ export function WhatsAppButton({
   variant = "inline",
   className,
 }) {
-  const href = whatsappLink(message);
+  // The WhatsApp number tracks the live (admin-editable) primary phone
+  // number, so a change in /admin/settings updates this button too.
+  const business = useBusinessInfo();
+  const href = `https://wa.me/${business.whatsapp.number}?text=${encodeURIComponent(
+    message || business.whatsapp.defaultMessage
+  )}`;
 
   if (variant === "floating") {
     return (

@@ -6,13 +6,17 @@ import { Logo } from "./Logo";
 import { Navigation } from "./Navigation";
 import { MobileMenu } from "./MobileMenu";
 import { Container } from "@/components/ui/Container";
-import { business, callLink, whatsappLink } from "@/config/business.config";
+import { callLink } from "@/config/business.config";
+import { useBusinessInfo } from "@/components/common/SiteDataProvider";
 import { useScroll } from "@/hooks/useScroll";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
+  const business = useBusinessInfo();
   const scrolled = useScroll(32);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const phoneHref = callLink(business.phone.primary);
+  const whatsappHref = `https://wa.me/${business.whatsapp.number}?text=${encodeURIComponent(business.whatsapp.defaultMessage)}`;
   // Genuinely transparent over the hero — a light scrim + subtle blur keep
   // text legible without ever reading as a solid card — then a proper glass
   // surface takes over once scrolled, when the header needs real contrast
@@ -51,7 +55,7 @@ export function Navbar() {
           {/* Primary phone number — always visible on desktop, never
               tucked away behind a menu. */}
           <a
-            href={callLink()}
+            href={phoneHref}
             className={cn(
               "hidden shrink-0 items-center gap-1.5 whitespace-nowrap rounded-[var(--radius-full)] px-1.5 py-2 text-[15px] font-medium transition-colors 2xl:flex",
               scrolled ? "text-[var(--color-ink)] hover:text-[var(--color-accent-2)]" : "text-[var(--color-text-on-dark)] hover:text-[var(--color-accent-soft)]"
@@ -83,7 +87,7 @@ export function Navbar() {
               without opening the full menu; Book Now lives as the first,
               largest item inside the drawer. */}
           <a
-            href={callLink()}
+            href={phoneHref}
             aria-label="Call Manoj Tours and Travels"
             className={cn(
               "flex h-11 w-11 items-center justify-center rounded-full border transition-all active:scale-90 sm:hidden",
@@ -96,7 +100,7 @@ export function Navbar() {
             </svg>
           </a>
           <a
-            href={whatsappLink()}
+            href={whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp Manoj Tours and Travels"

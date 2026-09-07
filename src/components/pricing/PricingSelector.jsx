@@ -7,15 +7,23 @@ import { Reveal } from "@/components/ui/Reveal";
 import { oneWayPricing, localPricing, roundTripPricing, airportPricing, pricingNotes } from "@/data/pricing";
 import { cn } from "@/lib/utils";
 
-const TABS = [
-  { value: "one-way", label: "One Way", data: oneWayPricing },
-  { value: "round-trip", label: "Round Trip", data: roundTripPricing },
-  { value: "local", label: "Local", data: localPricing },
-  { value: "airport", label: "Airport", data: null },
-];
-
-export function PricingSelector({ className, defaultTab = "one-way" }) {
+/**
+ * `pricing` is optional — when a parent server component has already
+ * fetched the admin-editable rates (see src/lib/siteContent.js), pass them
+ * in here; otherwise this falls back to the static defaults so existing
+ * usages keep working unchanged.
+ */
+export function PricingSelector({ className, defaultTab = "one-way", pricing }) {
   const [active, setActive] = useState(defaultTab);
+
+  const TABS = [
+    { value: "one-way", label: "One Way", data: pricing?.oneWayPricing || oneWayPricing },
+    { value: "round-trip", label: "Round Trip", data: pricing?.roundTripPricing || roundTripPricing },
+    { value: "local", label: "Local", data: pricing?.localPricing || localPricing },
+    { value: "airport", label: "Airport", data: null },
+  ];
+  const effectiveAirportPricing = pricing?.airportPricing || airportPricing;
+
   const tab = TABS.find((t) => t.value === active);
 
   return (
@@ -47,7 +55,7 @@ export function PricingSelector({ className, defaultTab = "one-way" }) {
       <div className="mt-8">
         {tab.value === "airport" ? (
           <div className="mx-auto max-w-lg rounded-[var(--radius-lg)] border border-dashed border-[var(--color-line)] bg-[var(--color-paper-2)] p-8 text-center">
-            <p className="text-h3 font-display text-[var(--color-ink)]">{airportPricing.message}</p>
+            <p className="text-h3 font-display text-[var(--color-ink)]">{effectiveAirportPricing.message}</p>
             <p className="mt-2.5 text-[17px] text-[var(--color-text-muted)]">
               Airport transfers are available 24×7 — call or WhatsApp us and we&rsquo;ll confirm the exact fare for your route.
             </p>

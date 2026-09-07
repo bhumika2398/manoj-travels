@@ -1,4 +1,7 @@
-import { business, callLink } from "@/config/business.config";
+"use client";
+
+import { callLink } from "@/config/business.config";
+import { useBusinessInfo } from "@/components/common/SiteDataProvider";
 import { cn } from "@/lib/utils";
 
 const PhoneIcon = (props) => (
@@ -12,12 +15,16 @@ const PhoneIcon = (props) => (
 );
 
 export function CallButton({
-  number = business.phone.primary,
+  number,
   label = "Call Now",
   variant = "inline",
   className,
 }) {
-  const href = callLink(number);
+  // Falls back to the live (admin-editable) primary number when no explicit
+  // number is passed in, so a phone-number change in /admin/settings updates
+  // every Call button on the site immediately.
+  const business = useBusinessInfo();
+  const href = callLink(number || business.phone.primary);
 
   if (variant === "floating") {
     return (

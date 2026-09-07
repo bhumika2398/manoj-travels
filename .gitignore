@@ -21,9 +21,6 @@ yarn-error.log*
 .env
 .env*.local
 
-# local-only file-backed enquiry log (see src/lib/enquiryStore.js)
-/.data
-
 # original (pre-fix) hero/section video files, kept locally for reference only
 # — see the video re-encoding notes for why these were replaced
 /.video-originals-backup

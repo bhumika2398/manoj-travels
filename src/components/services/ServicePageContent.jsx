@@ -11,10 +11,12 @@ import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { fleet } from "@/data/fleet";
 import { getServiceFaqs } from "@/data/faqs";
+import { getPricing } from "@/lib/siteContent";
 
-export function ServicePageContent({ service }) {
+export async function ServicePageContent({ service }) {
   const relatedVehicles = fleet.filter((v) => service.pricing?.some((p) => v.pricingIds.includes(p.id)) || v.tripTypes.includes(service.name));
   const faqs = getServiceFaqs(service);
+  const pricing = await getPricing();
 
   return (
     <>
@@ -41,7 +43,7 @@ export function ServicePageContent({ service }) {
       <Section tone="sand">
         <SectionHeading align="center" eyebrow="Pricing" title={`${service.name} Pricing`} className="mx-auto" />
         <div className="mt-10">
-          <PricingSelector defaultTab={service.pricingType} />
+          <PricingSelector defaultTab={service.pricingType} pricing={pricing} />
         </div>
       </Section>
 
