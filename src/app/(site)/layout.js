@@ -1,7 +1,6 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingActions } from "@/components/common/FloatingActions";
-import { WelcomePopup } from "@/components/common/WelcomePopup";
 import { ScrollToTop } from "@/components/common/ScrollToTop";
 import { SiteDataProvider } from "@/components/common/SiteDataProvider";
 import { OrganizationSchema } from "@/components/seo/OrganizationSchema";
@@ -36,7 +35,6 @@ export default async function SiteLayout({ children }) {
       <main id="main-content">{children}</main>
       <Footer />
       <FloatingActions />
-      <WelcomePopup />
     </SiteDataProvider>
   );
 }

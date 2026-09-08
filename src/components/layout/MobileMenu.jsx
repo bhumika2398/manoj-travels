@@ -83,7 +83,9 @@ export function MobileMenu({ open, onClose }) {
       </nav>
 
       <div className="grid grid-cols-1 gap-3 px-5 pb-8 pt-4">
-        <Button href="/fleet" variant="accent" size="lg" onClick={onClose} className="w-full">
+        {/* Scrolls to the homepage's booking form (src/components/home/Hero.jsx,
+            id="book") rather than navigating to /fleet or opening a popup. */}
+        <Button href="/#book" variant="accent" size="lg" onClick={onClose} className="w-full">
           Book Now
         </Button>
         <div className="grid grid-cols-2 gap-3">

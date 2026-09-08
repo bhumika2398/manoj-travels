@@ -23,7 +23,9 @@ export function CTASection() {
             Ready to plan your journey?
           </h2>
           <div className="mt-9">
-            <Button href="/fleet" variant="accent" size="lg">
+            {/* Scrolls back up to the hero's booking form (id="book") rather
+                than navigating to /fleet or opening a popup. */}
+            <Button href="/#book" variant="accent" size="lg">
               Book Now
             </Button>
           </div>

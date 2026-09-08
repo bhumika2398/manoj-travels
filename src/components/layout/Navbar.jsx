@@ -76,8 +76,10 @@ export function Navbar() {
               the safe way to get a genuinely pill-shaped glass button. Its
               own glass-accent surface reads clearly whether the header
               behind it is transparent or solid, so it needs no tone switch. */}
+          {/* Scrolls to the homepage's booking form (src/components/home/Hero.jsx,
+              id="book") rather than navigating to /fleet or opening a popup. */}
           <Link
-            href="/fleet"
+            href="/#book"
             className="glass-accent hidden shrink-0 items-center justify-center whitespace-nowrap rounded-full px-6 py-3 text-[16px] font-semibold tracking-[-0.01em] text-[var(--color-text-on-dark)] shadow-[var(--shadow-soft)] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:shadow-[var(--shadow-lift)] active:translate-y-0 active:scale-[0.98] sm:inline-flex lg:px-7 lg:py-3.5 lg:text-[17px]"
           >
             Book Now
