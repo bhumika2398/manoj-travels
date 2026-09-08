@@ -20,11 +20,11 @@ export function CallButton({
   variant = "inline",
   className,
 }) {
-  // Falls back to the live (admin-editable) primary number when no explicit
-  // number is passed in, so a phone-number change in /admin/settings updates
-  // every Call button on the site immediately.
+  // Falls back to the live (admin-editable) Active Website Contact Number
+  // when no explicit number is passed in, so a change in /admin/settings
+  // updates every Call button on the site immediately.
   const business = useBusinessInfo();
-  const href = callLink(number || business.phone.primary);
+  const href = callLink(number || business.phone.active);
 
   if (variant === "floating") {
     return (

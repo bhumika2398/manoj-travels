@@ -10,7 +10,10 @@ export const business = {
   description:
     "24x7 taxi and cab service in Bangalore offering one way cabs, round trip cabs, local cabs, airport pickup & drop, and tour packages across Karnataka and South India.",
 
-  // Phone numbers
+  // Phone numbers. `active`/`activeDisplay`/`activeIntl` is whichever of the
+  // two the admin has selected as the "Active Website Contact Number" — this
+  // static default mirrors that default choice (Contact Number 1); the live,
+  // admin-editable value comes from getBusinessInfo() (src/lib/siteContent.js).
   phone: {
     primary: "7899787478",
     primaryDisplay: "+91 78997 87478",
@@ -18,6 +21,9 @@ export const business = {
     secondary: "9110876296",
     secondaryDisplay: "+91 91108 76296",
     secondaryIntl: "+919110876296",
+    active: "7899787478",
+    activeDisplay: "+91 78997 87478",
+    activeIntl: "+917899787478",
   },
 
   email: "manojtaxitravels@gmail.com",

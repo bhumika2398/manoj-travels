@@ -87,12 +87,23 @@ function formatIndianPhoneDisplay(digits) {
   return `+91 ${digits.slice(0, 5)} ${digits.slice(5)}`;
 }
 
+// Default WhatsApp number, digits only (no "91" prefix) — same number as the
+// site's static default primary phone.
+const DEFAULT_WHATSAPP_NUMBER = business.whatsapp.number.replace(/^91/, "");
+
 /**
  * Returns the same shape used across the site (business.config.js's
- * `business`), with admin edits applied. Overrides are stored as raw 10-digit
- * numbers, so editing the primary phone here also updates the actual
- * tel:/WhatsApp links — not just the displayed text — since the WhatsApp
- * number is derived from it (matching the site's existing convention).
+ * `business`), with admin edits applied. Phone overrides are stored as raw
+ * 10-digit numbers.
+ *
+ * `phone.primary`/`phone.secondary` are Contact Number 1 / Contact Number 2
+ * — both always shown together where the site lists both numbers (Footer,
+ * Contact page). `phone.active` is whichever of the two the admin has
+ * selected as the "Active Website Contact Number" — every single-number
+ * call CTA (navbar, Call buttons) uses this one.
+ *
+ * The WhatsApp number is a separate, independently editable field — it no
+ * longer tracks the primary phone number.
  */
 export async function getBusinessInfo() {
   const override = await getContent("business_info");
@@ -100,6 +111,8 @@ export async function getBusinessInfo() {
 
   const primary = override.phonePrimary || business.phone.primary;
   const secondary = override.phoneSecondary || business.phone.secondary;
+  const active = override.activeNumber === "secondary" ? secondary : primary;
+  const whatsappNumber = override.whatsappNumber || DEFAULT_WHATSAPP_NUMBER;
 
   return {
     ...business,
@@ -110,6 +123,9 @@ export async function getBusinessInfo() {
       secondary,
       secondaryDisplay: override.phoneSecondary ? formatIndianPhoneDisplay(secondary) : business.phone.secondaryDisplay,
       secondaryIntl: `+91${secondary}`,
+      active,
+      activeDisplay: formatIndianPhoneDisplay(active),
+      activeIntl: `+91${active}`,
     },
     email: override.email || business.email,
     address: {
@@ -118,7 +134,7 @@ export async function getBusinessInfo() {
     },
     whatsapp: {
       ...business.whatsapp,
-      number: override.phonePrimary ? `91${primary}` : business.whatsapp.number,
+      number: `91${whatsappNumber}`,
     },
   };
 }
@@ -129,6 +145,8 @@ export async function getBusinessInfoOverride() {
     (await getContent("business_info")) || {
       phonePrimary: null,
       phoneSecondary: null,
+      activeNumber: null,
+      whatsappNumber: null,
       email: null,
       addressFull: null,
     }

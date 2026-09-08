@@ -15,7 +15,7 @@ export function Navbar() {
   const business = useBusinessInfo();
   const scrolled = useScroll(32);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const phoneHref = callLink(business.phone.primary);
+  const phoneHref = callLink(business.phone.active);
   const whatsappHref = `https://wa.me/${business.whatsapp.number}?text=${encodeURIComponent(business.whatsapp.defaultMessage)}`;
   // Genuinely transparent over the hero — a light scrim + subtle blur keep
   // text legible without ever reading as a solid card — then a proper glass
@@ -64,7 +64,7 @@ export function Navbar() {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4 shrink-0" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 5.5c0-1.1.9-2 2-2h2.2c.5 0 1 .3 1.2.8l1.3 3a1.4 1.4 0 0 1-.4 1.6L7.8 10.2a12 12 0 0 0 6 6l1.3-1.5a1.4 1.4 0 0 1 1.6-.4l3 1.3c.5.2.8.7.8 1.2V19c0 1.1-.9 2-2 2h-1C10.6 21 3 13.4 3 5.5z" />
             </svg>
-            {business.phone.primaryDisplay}
+            {business.phone.activeDisplay}
           </a>
 
           {/* The premium pill CTA — built standalone rather than through the

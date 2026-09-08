@@ -1,14 +1,14 @@
 import { AdminTopbar } from "@/components/admin/AdminTopbar";
 import { AdminCard } from "@/components/admin/AdminCard";
 import { SettingsForm } from "@/components/admin/SettingsForm";
-import { getBusinessInfo } from "@/lib/siteContent";
+import { getBusinessInfo, getBusinessInfoOverride } from "@/lib/siteContent";
 import { hasSupabase } from "@/lib/supabase/admin";
 
 export const dynamic = "force-dynamic";
 
 export default async function AdminSettingsPage() {
   const supabaseReady = hasSupabase();
-  const info = await getBusinessInfo();
+  const [info, override] = await Promise.all([getBusinessInfo(), getBusinessInfoOverride()]);
 
   return (
     <>
@@ -28,6 +28,8 @@ export default async function AdminSettingsPage() {
             initial={{
               phonePrimary: info.phone.primary,
               phoneSecondary: info.phone.secondary,
+              activeNumber: override.activeNumber === "secondary" ? "secondary" : "primary",
+              whatsappNumber: info.whatsapp.number.replace(/^91/, ""),
               email: info.email,
               addressFull: info.address.full,
             }}

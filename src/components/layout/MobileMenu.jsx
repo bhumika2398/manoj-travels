@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { mainNav } from "@/config/navigation.config";
-import { business } from "@/config/business.config";
+import { useBusinessInfo } from "@/components/common/SiteDataProvider";
 import { Logo } from "./Logo";
 import { Button } from "@/components/ui/Button";
 import { WhatsAppButton } from "@/components/common/WhatsAppButton";
@@ -13,6 +13,7 @@ import { cn } from "@/lib/utils";
 
 export function MobileMenu({ open, onClose }) {
   const pathname = usePathname();
+  const business = useBusinessInfo();
 
   useEffect(() => {
     if (!open) return;
@@ -86,7 +87,7 @@ export function MobileMenu({ open, onClose }) {
           Book Now
         </Button>
         <div className="grid grid-cols-2 gap-3">
-          <CallButton label={`Call ${business.phone.primaryDisplay}`} className="w-full" />
+          <CallButton label={`Call ${business.phone.activeDisplay}`} className="w-full" />
           <WhatsAppButton label="WhatsApp" className="w-full" />
         </div>
       </div>
