@@ -26,7 +26,7 @@ export const business = {
     activeIntl: "+917899787478",
   },
 
-  email: "manojtaxitravels@gmail.com",
+  email: "manojtaxiservice29@gmail.com",
 
   address: {
     line1: "No 34 Nesara Sandalwood",

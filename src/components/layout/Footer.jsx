@@ -127,6 +127,17 @@ export function Footer() {
           <p className="text-[15px] text-[var(--color-text-on-dark-muted)]/70">
             © {year} Manoj Tours and Travels (Manoj Taxi Service). All rights reserved.
           </p>
+          <p className="mt-2 text-[15px] text-[var(--color-text-on-dark-muted)]/70">
+            Designed &amp; Developed by{" "}
+            <a
+              href="https://www.naazailabs.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-[var(--color-text-on-dark-muted)]/40 underline-offset-2 transition-colors hover:text-[var(--color-accent-soft)]"
+            >
+              Naaz AI Labs
+            </a>
+          </p>
         </div>
       </Container>
     </footer>
