@@ -2,6 +2,8 @@ import { supabasePublic } from "@/lib/supabase/public";
 import { supabaseAdmin, hasSupabase } from "@/lib/supabase/admin";
 import { oneWayPricing, localPricing, roundTripPricing, airportPricing } from "@/data/pricing";
 import { business } from "@/config/business.config";
+import { tourPackages as defaultTourPackages } from "@/data/tourPackages";
+import { slugify } from "@/lib/utils";
 
 // ---------------------------------------------------------------------------
 // Admin-editable overrides for pricing, business info and vehicle/destination
@@ -179,4 +181,51 @@ export async function removeImageOverride(path) {
   delete overrides[path];
   await setContent("image_overrides", overrides);
   return overrides;
+}
+
+// --- Tour packages -------------------------------------------------------
+
+/** Full list, including inactive packages — used by the admin manager. */
+export async function getAllTourPackages() {
+  const override = await getContent("tour_packages");
+  return Array.isArray(override) ? override : defaultTourPackages;
+}
+
+/** Active-only list, in the shape the public Tours & Packages page renders. */
+export async function getTourPackages() {
+  const all = await getAllTourPackages();
+  return all.filter((p) => p.active !== false);
+}
+
+export async function addTourPackage(fields) {
+  const packages = await getAllTourPackages();
+  const baseSlug = slugify(fields.title || "package");
+  let id = baseSlug || `package-${Date.now()}`;
+  let n = 2;
+  while (packages.some((p) => p.id === id)) {
+    id = `${baseSlug}-${n++}`;
+  }
+  const next = [
+    { id, title: fields.title, description: fields.description || "", price: fields.price, priceUnit: fields.priceUnit || "per head", image: fields.image || null, active: fields.active !== false },
+    ...packages,
+  ];
+  await setContent("tour_packages", next);
+  return next;
+}
+
+export async function updateTourPackage(id, fields) {
+  const packages = await getAllTourPackages();
+  if (!packages.some((p) => p.id === id)) {
+    throw new Error("Package not found.");
+  }
+  const next = packages.map((p) => (p.id === id ? { ...p, ...fields, id } : p));
+  await setContent("tour_packages", next);
+  return next;
+}
+
+export async function deleteTourPackage(id) {
+  const packages = await getAllTourPackages();
+  const next = packages.filter((p) => p.id !== id);
+  await setContent("tour_packages", next);
+  return next;
 }

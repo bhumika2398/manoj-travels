@@ -31,6 +31,7 @@ export const mainNav = [
     ],
   },
   { label: "Destinations", href: "/destinations" },
+  { label: "Tours & Packages", href: "/tours-packages" },
   { label: "Gallery", href: "/gallery" },
   { label: "Testimonials", href: "/testimonials" },
   { label: "About", href: "/about" },
@@ -42,6 +43,7 @@ export const footerNav = {
   explore: [
     { label: "Fleet", href: "/fleet" },
     { label: "Destinations", href: "/destinations" },
+    { label: "Tours & Packages", href: "/tours-packages" },
     { label: "Gallery", href: "/gallery" },
     { label: "About Us", href: "/about" },
     { label: "FAQ", href: "/faq" },

@@ -8,6 +8,7 @@ const NAV = [
   { href: "/admin", label: "Dashboard", icon: "grid" },
   { href: "/admin/images", label: "Manage Images", icon: "image" },
   { href: "/admin/pricing", label: "Manage Pricing", icon: "tag" },
+  { href: "/admin/tours", label: "Tours & Packages", icon: "map" },
   { href: "/admin/enquiries", label: "Enquiries", icon: "inbox" },
   { href: "/admin/settings", label: "Website Information", icon: "gear" },
 ];
@@ -17,6 +18,7 @@ const ICONS = {
   image: "M4 5h16v14H4V5Zm3 10 3.5-4 2.5 3 2-2.5L19 15M8.5 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z",
   tag: "M4 4h7l9 9-7 7-9-9V4Zm4 4h.01",
   inbox: "M4 12h4l1.5 3h5L16 12h4M4 12l1.5-6h13L20 12M4 12v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-6",
+  map: "M9 4 4 6v14l5-2 6 2 5-2V4l-5 2-6-2Zm0 0v14m6-14v14",
   gear: "M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7ZM19.4 13.6l1.2 1.9-1.7 1.7-1.9-1.2a6.9 6.9 0 0 1-1.7.7L15 19h-2.4l-.3-2.3a6.9 6.9 0 0 1-1.7-.7l-1.9 1.2-1.7-1.7 1.2-1.9a6.9 6.9 0 0 1-.7-1.7L4.3 12v-2.4l2.3-.3c.15-.6.4-1.17.7-1.7L6.1 5.7l1.7-1.7 1.9 1.2c.53-.3 1.1-.55 1.7-.7L11.7 2.2H14l.3 2.3c.6.15 1.17.4 1.7.7l1.9-1.2 1.7 1.7-1.2 1.9c.3.53.55 1.1.7 1.7l2.3.3V12l-2.3.3c-.15.6-.4 1.17-.7 1.7Z",
 };
 
