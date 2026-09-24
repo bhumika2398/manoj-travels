@@ -4,7 +4,7 @@ import { Image } from "@/components/ui/Image";
 import { Reveal } from "@/components/ui/Reveal";
 import { useParallax } from "@/hooks/useParallax";
 
-export function DestinationHero({ title, description, image }) {
+export function DestinationHero({ title, description, image, imageAlt }) {
   const [parallaxRef, parallaxStyle] = useParallax(18);
 
   return (
@@ -12,7 +12,7 @@ export function DestinationHero({ title, description, image }) {
       {image && (
         <div className="absolute inset-0 animate-reveal">
           <div ref={parallaxRef} style={parallaxStyle} className="h-full w-full scale-110">
-            <Image src={image} alt="" wrapperClassName="h-full w-full" priority sizes="100vw" />
+            <Image src={image} alt={imageAlt || title} wrapperClassName="h-full w-full" priority sizes="100vw" />
           </div>
         </div>
       )}

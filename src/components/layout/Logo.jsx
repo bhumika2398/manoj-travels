@@ -10,12 +10,14 @@ import logoSrc from "../../../public/images/logo/manoj-logo.png";
  * flat across the nav. Paired with the wordmark, never replaced by it.
  */
 export function Logo({ tone = "dark", size = "md", compactOnMobile = false, className }) {
-  const dims = size === "sm" ? "h-9 w-9" : size === "lg" ? "h-14 w-14" : "h-11 w-11";
+  const dims = size === "sm" ? "h-8 w-8" : size === "lg" ? "h-14 w-14" : "h-11 w-11";
+  const nameSize = size === "sm" ? "text-[1rem]" : "text-[1.125rem] sm:text-[1.25rem]";
+  const taglineSize = size === "sm" ? "text-[9px]" : "text-[10px]";
 
   return (
     <Link
       href="/"
-      className={cn("group flex items-center gap-3", className)}
+      className={cn("group flex items-center gap-2.5", className)}
       aria-label="Manoj Tours and Travels — Home"
     >
       <span
@@ -36,7 +38,8 @@ export function Logo({ tone = "dark", size = "md", compactOnMobile = false, clas
       <span className={cn("flex-col leading-none", compactOnMobile ? "hidden sm:flex" : "flex")}>
         <span
           className={cn(
-            "whitespace-nowrap font-display text-[1.125rem] font-semibold tracking-tight sm:text-[1.25rem] 2xl:text-[1.625rem]",
+            "whitespace-nowrap font-display font-semibold tracking-tight",
+            nameSize,
             tone === "dark" ? "text-[var(--color-ink)]" : "text-[var(--color-text-on-dark)]"
           )}
         >
@@ -48,7 +51,8 @@ export function Logo({ tone = "dark", size = "md", compactOnMobile = false, clas
         </span>
         <span
           className={cn(
-            "mt-0.5 whitespace-nowrap text-[10px] font-medium uppercase tracking-[0.26em]",
+            "mt-0.5 whitespace-nowrap font-medium uppercase tracking-[0.2em]",
+            taglineSize,
             tone === "dark" ? "text-[var(--color-text-muted)]" : "text-[var(--color-text-on-dark-muted)]"
           )}
         >

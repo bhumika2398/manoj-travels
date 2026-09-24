@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { WhatsAppButton } from "@/components/common/WhatsAppButton";
 import { CallButton } from "@/components/common/CallButton";
 import { Logo } from "./Logo";
-import { footerNav } from "@/config/navigation.config";
+import { footerNav, popularRoutes } from "@/config/navigation.config";
 import { useBusinessInfo } from "@/components/common/SiteDataProvider";
 import { cn } from "@/lib/utils";
 
@@ -121,9 +121,34 @@ export function Footer() {
           </div>
         </div>
 
+        {/* Compact, text-only route links — real keyword-matched routes to
+            real pages, not a full sitemap dump (see /routes for the rest). */}
+        <div className="mt-12 border-t border-[var(--color-line-on-dark)] pt-8">
+          <p className="text-[13px] font-medium uppercase tracking-[0.16em] text-[var(--color-text-on-dark-muted)]/70">
+            Popular Routes
+          </p>
+          <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-3">
+            {popularRoutes.map((route) => (
+              <Link
+                key={route.href}
+                href={route.href}
+                className="text-[16px] text-[var(--color-text-on-dark-muted)] transition-colors hover:text-[var(--color-accent-soft)]"
+              >
+                {route.label}
+              </Link>
+            ))}
+            <Link
+              href="/destinations"
+              className="text-[16px] font-medium text-[var(--color-accent-soft)] transition-colors hover:text-[var(--color-text-on-dark)]"
+            >
+              All Destinations →
+            </Link>
+          </div>
+        </div>
+
         {/* Bottom row — copyright only; phone/email/address live in the
             Contact column above, not duplicated here. */}
-        <div className="mt-14 border-t border-[var(--color-line-on-dark)] pt-7">
+        <div className="mt-10 border-t border-[var(--color-line-on-dark)] pt-7">
           <p className="text-[15px] text-[var(--color-text-on-dark-muted)]/70">
             © {year} Manoj Tours and Travels (Manoj Taxi Service). All rights reserved.
           </p>

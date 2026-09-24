@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ServiceHero } from "./ServiceHero";
 import { ServiceFeatures } from "./ServiceFeatures";
 import { ServiceCTA } from "./ServiceCTA";
@@ -46,6 +47,23 @@ export async function ServicePageContent({ service }) {
           <PricingSelector defaultTab={service.pricingType} pricing={pricing} />
         </div>
       </Section>
+
+      {service.popularRoutes?.length > 0 && (
+        <Section tone="sand">
+          <SectionHeading eyebrow="Popular Routes" title="Explore routes from Bangalore" />
+          <div className="mt-8 flex flex-wrap gap-3">
+            {service.popularRoutes.map((route) => (
+              <Link
+                key={route.href}
+                href={route.href}
+                className="rounded-full border border-[var(--color-border)] px-5 py-2.5 text-[15px] font-medium text-[var(--color-ink)] transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
+              >
+                {route.label}
+              </Link>
+            ))}
+          </div>
+        </Section>
+      )}
 
       {relatedVehicles.length > 0 && (
         <Section tone="paper">

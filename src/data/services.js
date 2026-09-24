@@ -22,6 +22,20 @@ export const services = [
       "Single travellers and small families",
       "Employees relocating or travelling on work",
     ],
+    keywords: [
+      "one way cab bangalore",
+      "bangalore one way drop taxi",
+      "outstation cab bangalore",
+      "bangalore to mysore taxi",
+      "bangalore to tirupati taxi",
+      "bangalore to hyderabad taxi",
+    ],
+    popularRoutes: [
+      { label: "Bangalore to Mysore", href: "/destinations/mysore" },
+      { label: "Bangalore to Tirupati", href: "/destinations/tirupati" },
+      { label: "Bangalore to Hyderabad", href: "/destinations/hyderabad" },
+      { label: "Bangalore to Mantralayam", href: "/destinations/mantralayam" },
+    ],
   },
   {
     slug: "round-trip-cabs",
@@ -43,6 +57,19 @@ export const services = [
       "Multi-day tours to Ooty, Coorg, Chikmagalur and Kerala",
       "Family and group pilgrimages",
       "Custom outstation itineraries",
+    ],
+    keywords: [
+      "round trip taxi bangalore",
+      "bangalore to ooty taxi",
+      "bangalore to coorg taxi",
+      "bangalore to munnar taxi",
+      "outstation round trip cab bangalore",
+    ],
+    popularRoutes: [
+      { label: "Bangalore to Ooty", href: "/destinations/ooty" },
+      { label: "Bangalore to Coorg", href: "/destinations/coorg" },
+      { label: "Bangalore to Munnar", href: "/destinations/munnar" },
+      { label: "Bangalore to Chikmagalur", href: "/destinations/chikmagalur" },
     ],
   },
   {
@@ -66,6 +93,12 @@ export const services = [
       "City errands, meetings and events",
       "Half-day and full-day local hire",
     ],
+    keywords: [
+      "local cab bangalore",
+      "bangalore local taxi package",
+      "bangalore hourly cab booking",
+      "bangalore to nandi hills taxi",
+    ],
   },
   {
     slug: "airport-pickup-drop",
@@ -88,6 +121,18 @@ export const services = [
       "Airport pickup for arriving guests and family",
       "Airport drop for outbound flights",
       "Early morning and late night transfers",
+    ],
+    keywords: [
+      "bangalore airport taxi",
+      "kempegowda airport cab",
+      "bangalore airport pickup and drop",
+      "airport taxi service bangalore",
+    ],
+    popularRoutes: [
+      { label: "Bangalore Airport to Mysore", href: "/destinations/mysore" },
+      { label: "Bangalore Airport to Tirupati", href: "/destinations/tirupati" },
+      { label: "Bangalore Airport to Hyderabad", href: "/destinations/hyderabad" },
+      { label: "All outstation routes", href: "/routes" },
     ],
   },
 ];

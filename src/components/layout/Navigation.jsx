@@ -16,7 +16,7 @@ export function Navigation({ tone = "dark" }) {
       : "text-[var(--color-text-on-dark)]/80 hover:text-[var(--color-text-on-dark)]";
 
   return (
-    <ul className="hidden shrink-0 items-center gap-0.5 2xl:flex">
+    <ul className="hidden shrink-0 items-center gap-0.5 min-[1440px]:flex">
       {mainNav.map((item) => {
         const isActive = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
         return (
@@ -29,7 +29,7 @@ export function Navigation({ tone = "dark" }) {
           <Link
             href={item.href}
             className={cn(
-              "relative flex items-center gap-1 whitespace-nowrap rounded-[var(--radius-sm)] px-2 py-2.5 text-[17px] font-medium transition-colors duration-200 xl:px-2.5",
+              "relative flex items-center gap-1 whitespace-nowrap rounded-[var(--radius-sm)] px-2 py-2.5 text-[15px] font-medium transition-colors duration-200",
               linkTone
             )}
             aria-haspopup={item.children ? "true" : undefined}

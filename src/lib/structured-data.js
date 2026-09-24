@@ -119,6 +119,32 @@ export function serviceSchema(service) {
   };
 }
 
+export function destinationSchema(destination) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: `Bangalore to ${destination.name} Taxi`,
+    provider: { "@id": url("/#business") },
+    areaServed: [
+      { "@type": "Place", name: "Bangalore" },
+      { "@type": "Place", name: destination.name },
+    ],
+    description: destination.description,
+    url: url(`/destinations/${destination.slug}`),
+  };
+}
+
+export function tourPackageSchema(pkg) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    name: pkg.title,
+    description: pkg.description,
+    url: url(`/tours-packages/${pkg.id}`),
+    provider: { "@id": url("/#business") },
+  };
+}
+
 export function articleSchema({ title, description, image, slug, datePublished }) {
   return {
     "@context": "https://schema.org",

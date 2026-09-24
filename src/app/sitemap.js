@@ -3,6 +3,7 @@ import { services } from "@/data/services";
 import { destinations } from "@/data/destinations";
 import { fleet } from "@/data/fleet";
 import { blogPosts } from "@/data/blog";
+import { tourPackages } from "@/data/tourPackages";
 
 export default function sitemap() {
   const url = (path) => `${siteConfig.url}${path}`;
@@ -18,6 +19,8 @@ export default function sitemap() {
     "/faq",
     "/contact",
     "/blog",
+    "/routes",
+    "/tours-packages",
   ].map((path) => ({
     url: url(path),
     lastModified: now,
@@ -53,11 +56,21 @@ export default function sitemap() {
     priority: 0.5,
   }));
 
+  const tourPackageRoutes = tourPackages
+    .filter((p) => p.active !== false)
+    .map((p) => ({
+      url: url(`/tours-packages/${p.id}`),
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    }));
+
   return [
     ...staticRoutes,
     ...serviceRoutes,
     ...destinationRoutes,
     ...fleetRoutes,
     ...blogRoutes,
+    ...tourPackageRoutes,
   ];
 }

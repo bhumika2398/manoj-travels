@@ -38,8 +38,8 @@ export function Navbar() {
     >
       <Container
         className={cn(
-          "flex items-center justify-between gap-3 transition-[padding] duration-500 ease-out",
-          scrolled ? "py-3" : "py-4"
+          "flex items-center justify-between gap-2 transition-[padding] duration-500 ease-out min-[1440px]:gap-3",
+          scrolled ? "py-2.5" : "py-3"
         )}
       >
         {/* Logo sits flush against the left edge of the content column —    */}
@@ -47,17 +47,17 @@ export function Navbar() {
         {/* margins around it. Starts on-dark/transparent over the hero,     */}
         {/* switches to on-light glass the moment there's real page content  */}
         {/* behind it.                                                      */}
-        <Logo tone={tone} size="md" compactOnMobile className="shrink-0" />
+        <Logo tone={tone} size="sm" compactOnMobile className="shrink-0" />
 
         <Navigation tone={tone} />
 
-        <div className="flex shrink-0 items-center gap-2 sm:gap-3">
+        <div className="flex shrink-0 items-center gap-1.5 sm:gap-2 2xl:gap-3">
           {/* Primary phone number — always visible on desktop, never
               tucked away behind a menu. */}
           <a
             href={phoneHref}
             className={cn(
-              "hidden shrink-0 items-center gap-1.5 whitespace-nowrap rounded-[var(--radius-full)] px-1.5 py-2 text-[15px] font-medium transition-colors 2xl:flex",
+              "hidden shrink-0 items-center gap-1.5 whitespace-nowrap rounded-[var(--radius-full)] px-1.5 py-2 text-[14px] font-medium transition-colors min-[1440px]:flex",
               scrolled ? "text-[var(--color-ink)] hover:text-[var(--color-accent-2)]" : "text-[var(--color-text-on-dark)] hover:text-[var(--color-accent-soft)]"
             )}
           >
@@ -80,7 +80,7 @@ export function Navbar() {
               id="book") rather than navigating to /fleet or opening a popup. */}
           <Link
             href="/#book"
-            className="glass-accent hidden shrink-0 items-center justify-center whitespace-nowrap rounded-full px-6 py-3 text-[16px] font-semibold tracking-[-0.01em] text-[var(--color-text-on-dark)] shadow-[var(--shadow-soft)] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:shadow-[var(--shadow-lift)] active:translate-y-0 active:scale-[0.98] sm:inline-flex lg:px-7 lg:py-3.5 lg:text-[17px]"
+            className="glass-accent hidden shrink-0 items-center justify-center whitespace-nowrap rounded-full px-5 py-2.5 text-[15px] font-semibold tracking-[-0.01em] text-[var(--color-text-on-dark)] shadow-[var(--shadow-soft)] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:shadow-[var(--shadow-lift)] active:translate-y-0 active:scale-[0.98] sm:inline-flex min-[1440px]:px-7 min-[1440px]:py-3.5 min-[1440px]:text-[17px]"
           >
             Book Now
           </Link>
@@ -119,7 +119,7 @@ export function Navbar() {
             onClick={() => setMobileOpen(true)}
             aria-label="Open menu"
             className={cn(
-              "flex h-11 w-11 items-center justify-center rounded-full border transition-all active:scale-90 2xl:hidden",
+              "flex h-11 w-11 items-center justify-center rounded-full border transition-all active:scale-90 min-[1440px]:hidden",
               scrolled ? "border-[var(--color-line-accent)]" : "border-white/40",
               iconTone
             )}

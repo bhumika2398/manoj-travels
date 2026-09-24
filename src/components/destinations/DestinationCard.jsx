@@ -16,7 +16,7 @@ export function DestinationCard({ destination, className }) {
       <div className="img-hover-sweep h-full w-full">
         <Image
           src={destination.image}
-          alt={`${destination.name} — travel with Manoj Tours and Travels`}
+          alt={`Bangalore to ${destination.name} taxi service — Manoj Tours and Travels`}
           wrapperClassName="h-full"
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
         />

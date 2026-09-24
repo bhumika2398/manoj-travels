@@ -1,15 +1,22 @@
 import { PageHero } from "@/components/common/PageHero";
 import { Section } from "@/components/ui/Section";
 import { Breadcrumbs } from "@/components/common/Breadcrumbs";
-import { TourPackageCard } from "@/components/tours/TourPackageCard";
+import { ToursPackagesExplorer } from "@/components/tours/ToursPackagesExplorer";
 import { getTourPackages } from "@/lib/siteContent";
 import { buildMetadata } from "@/lib/metadata";
 
 export const metadata = buildMetadata({
   title: "Tours & Packages",
   description:
-    "Affordable tour packages from Bangalore with Manoj Tours and Travels — one-way sightseeing trips, round trips and more.",
+    "Round trip tour packages from Bangalore with Manoj Tours and Travels — Coorg, Munnar, Ooty, Chikmagalur, Goa, Gokarna, Sakleshpur, Kodaikanal, Pondicherry, Wayanad, Hampi, Tirupati and more.",
   path: "/tours-packages",
+  keywords: [
+    "bangalore to coorg tour package",
+    "bangalore to munnar tour package",
+    "bangalore to ooty tour package",
+    "bangalore to goa tour package",
+    "bangalore tour packages",
+  ],
 });
 
 export const revalidate = 60;
@@ -21,10 +28,10 @@ export default async function ToursPackagesPage() {
     <>
       <PageHero
         eyebrow="Tours & Packages"
-        title="Affordable tour packages from Bangalore"
-        description="Handpicked sightseeing and outstation packages at fixed, affordable prices."
-        image="/images/destinations/mysuru.png"
-        imageAlt="Mysore Palace"
+        title="Tour packages from Bangalore"
+        description="Handpicked round-trip tour packages to Karnataka, Kerala, Tamil Nadu, Andhra Pradesh, Puducherry and Goa."
+        image="/images/destinations/coorg.png"
+        imageAlt="Coorg tour package from Bangalore"
       />
       <Section tone="paper">
         <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Tours & Packages", href: "/tours-packages" }]} />
@@ -32,11 +39,7 @@ export default async function ToursPackagesPage() {
           {packages.length === 0 ? (
             <p className="text-[16px] text-[var(--color-text-muted)]">No packages available right now — please check back soon.</p>
           ) : (
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {packages.map((pkg) => (
-                <TourPackageCard key={pkg.id} pkg={pkg} />
-              ))}
-            </div>
+            <ToursPackagesExplorer packages={packages} />
           )}
         </div>
       </Section>

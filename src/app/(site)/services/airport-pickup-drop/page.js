@@ -8,6 +8,7 @@ export const metadata = buildMetadata({
   title: "Airport Pickup & Drop in Bangalore",
   description: service.summary,
   path: "/services/airport-pickup-drop",
+  keywords: service.keywords,
 });
 
 export default function AirportPickupDropPage() {

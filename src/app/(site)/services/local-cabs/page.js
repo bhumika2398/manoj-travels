@@ -8,6 +8,7 @@ export const metadata = buildMetadata({
   title: "Local Cabs in Bangalore",
   description: service.summary,
   path: "/services/local-cabs",
+  keywords: service.keywords,
 });
 
 export default function LocalCabsPage() {

@@ -39,10 +39,23 @@ export const mainNav = [
   { label: "Contact", href: "/contact" },
 ];
 
+// Top routes by search demand that already have a dedicated destination
+// page — used for the Footer's compact "Popular Routes" strip. Keep this
+// list short (5-7 items); the full list lives on /routes and /destinations.
+export const popularRoutes = [
+  { label: "Bangalore → Mysore", href: "/destinations/mysore" },
+  { label: "Bangalore → Coorg", href: "/destinations/coorg" },
+  { label: "Bangalore → Chikmagalur", href: "/destinations/chikmagalur" },
+  { label: "Bangalore → Ooty", href: "/destinations/ooty" },
+  { label: "Bangalore → Munnar", href: "/destinations/munnar" },
+  { label: "Bangalore → Tirupati", href: "/destinations/tirupati" },
+];
+
 export const footerNav = {
   explore: [
     { label: "Fleet", href: "/fleet" },
     { label: "Destinations", href: "/destinations" },
+    { label: "Outstation Routes", href: "/routes" },
     { label: "Tours & Packages", href: "/tours-packages" },
     { label: "Gallery", href: "/gallery" },
     { label: "About Us", href: "/about" },
