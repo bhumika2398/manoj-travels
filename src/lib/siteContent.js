@@ -195,6 +195,8 @@ export async function removeImageOverride(path) {
 // image existed.
 const ADMIN_EDITABLE_FIELDS = ["title", "description", "price", "priceUnit", "active"];
 
+const normalizeTitle = (title) => (title || "").trim().toLowerCase();
+
 /** Full list, including inactive packages — used by the admin manager. */
 export async function getAllTourPackages() {
   const override = await getContent("tour_packages");
@@ -217,9 +219,21 @@ export async function getAllTourPackages() {
   });
 
   // Any override entries with an id that isn't one of the static defaults
-  // are genuinely new packages an admin created from scratch — keep them
-  // as-is, newest first, matching the previous behaviour.
-  const adminCreated = Array.from(overrideById.values());
+  // are genuinely new packages an admin created from scratch — EXCEPT when
+  // their title matches a static package's title. That happens when a
+  // package's static id changed over time (e.g. an id scheme update) and
+  // an old snapshot with the previous id is still sitting in Supabase —
+  // it's the same package under a stale id, not a second real package, so
+  // treating it as "admin created" would silently duplicate the card with
+  // no image (the admin UI never sets one). Drop those; keep the rest.
+  const staticTitles = new Set(defaultTourPackages.map((p) => normalizeTitle(p.title)));
+  const seenTitles = new Set();
+  const adminCreated = Array.from(overrideById.values()).filter((p) => {
+    const key = normalizeTitle(p.title);
+    if (staticTitles.has(key) || seenTitles.has(key)) return false;
+    seenTitles.add(key);
+    return true;
+  });
   return [...adminCreated, ...merged];
 }
 
