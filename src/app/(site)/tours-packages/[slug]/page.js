@@ -10,6 +10,7 @@ import { WhatsAppButton } from "@/components/common/WhatsAppButton";
 import { TourPackageSchema } from "@/components/seo/TourPackageSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { tourPackages } from "@/data/tourPackages";
+import { destinations } from "@/data/destinations";
 import { getAllTourPackages } from "@/lib/siteContent";
 import { pricingNotes } from "@/data/pricing";
 import { buildMetadata } from "@/lib/metadata";
@@ -56,6 +57,7 @@ export default async function TourPackageDetailPage({ params }) {
   const pkg = await getPackage(params.slug);
   if (!pkg) notFound();
 
+  const relatedDestination = destinations.find((d) => pkg.id.includes(d.slug));
   const breadcrumbItems = [
     { label: "Home", href: "/" },
     { label: "Tours & Packages", href: "/tours-packages" },
@@ -95,6 +97,19 @@ export default async function TourPackageDetailPage({ params }) {
               {pkg.category && <Badge>{pkg.category}</Badge>}
               {pkg.duration && <Badge>{pkg.duration}</Badge>}
             </div>
+
+            {relatedDestination && (
+              <p className="mt-6 text-[15px] text-[var(--color-text-muted)]">
+                See the full{" "}
+                <a
+                  href={`/destinations/${relatedDestination.slug}`}
+                  className="font-medium text-[var(--color-accent-2)] underline underline-offset-4"
+                >
+                  {relatedDestination.name} destination guide
+                </a>{" "}
+                for route details and fare guidance.
+              </p>
+            )}
 
             {pkg.vehicleTypes?.length > 0 && (
               <div className="mt-10">

@@ -6,7 +6,13 @@ export function ServiceHero({ service }) {
   return (
     <section className="relative flex h-[65vh] min-h-[460px] items-end overflow-hidden bg-[var(--color-ink)]">
       <div className="absolute inset-0">
-        <Image src={service.heroImage} alt="" wrapperClassName="h-full w-full" priority sizes="100vw" />
+        <Image
+          src={service.heroImage}
+          alt={`${service.name} — Manoj Tours and Travels`}
+          wrapperClassName="h-full w-full"
+          priority
+          sizes="100vw"
+        />
       </div>
       <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-ink)] via-[var(--color-ink)]/50 to-[var(--color-ink)]/10" />
       <div className="container-edge relative z-10 mx-auto w-full max-w-7xl pb-14 pt-32">

@@ -39,7 +39,7 @@ export default function BlogPostPage({ params }) {
         <Reveal>
           <h1 className="font-display text-3xl text-[var(--color-ink)] md:text-4xl">{post.title}</h1>
           <div className="relative mt-6 h-64 overflow-hidden rounded-[var(--radius-lg)] md:h-96">
-            <Image src={post.image} alt="" wrapperClassName="h-full" />
+            <Image src={post.image} alt={post.title} wrapperClassName="h-full" />
           </div>
           <div className="prose-content mt-8 space-y-5">
             {post.content.map((paragraph, i) => (

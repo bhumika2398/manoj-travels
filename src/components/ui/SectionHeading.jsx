@@ -8,6 +8,7 @@ export function SectionHeading({
   align = "left",
   tone = "light",
   className,
+  as: Tag = "h2",
 }) {
   return (
     <Reveal
@@ -27,14 +28,14 @@ export function SectionHeading({
           {eyebrow}
         </p>
       )}
-      <h2
+      <Tag
         className={cn(
           "text-balance text-h2 font-display",
           tone === "dark" ? "text-[var(--color-text-on-dark)]" : "text-[var(--color-ink)]"
         )}
       >
         {title}
-      </h2>
+      </Tag>
       {description && (
         <p
           className={cn(

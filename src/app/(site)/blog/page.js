@@ -18,6 +18,7 @@ export default function BlogPage() {
     <Section tone="paper" className="pt-36 md:pt-44">
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Travel Guides", href: "/blog" }]} />
       <SectionHeading
+        as="h1"
         className="mt-6"
         eyebrow="Travel Guides"
         title="Practical guides for planning your trip"
@@ -33,7 +34,7 @@ export default function BlogPage() {
               <div className="relative h-44">
                 <Image
                   src={post.image}
-                  alt=""
+                  alt={post.title}
                   wrapperClassName="h-44"
                   className="transition-transform duration-500 group-hover:scale-105"
                 />
