@@ -185,10 +185,42 @@ export async function removeImageOverride(path) {
 
 // --- Tour packages -------------------------------------------------------
 
+// Fields the admin "Add/Edit package" form actually collects (see
+// TourPackagesManager.jsx). Anything else on a stored override (notably
+// `image`, which the admin UI has no field for and would otherwise save as
+// null) must never override the current code's static default for a
+// package that still exists in src/data/tourPackages.js — that field-level
+// merge is what keeps package photos correct in production even if
+// Supabase holds an older/partial snapshot from before this package or its
+// image existed.
+const ADMIN_EDITABLE_FIELDS = ["title", "description", "price", "priceUnit", "active"];
+
 /** Full list, including inactive packages — used by the admin manager. */
 export async function getAllTourPackages() {
   const override = await getContent("tour_packages");
-  return Array.isArray(override) ? override : defaultTourPackages;
+  if (!Array.isArray(override)) return defaultTourPackages;
+
+  const overrideById = new Map(override.map((p) => [p.id, p]));
+
+  // Static defaults are the source of truth for id/image/state/category/
+  // vehicleTypes/featured — an admin edit only ever touches the fields
+  // above, layered on top.
+  const merged = defaultTourPackages.map((base) => {
+    const edit = overrideById.get(base.id);
+    if (!edit) return base;
+    const patch = {};
+    for (const key of ADMIN_EDITABLE_FIELDS) {
+      if (edit[key] !== undefined) patch[key] = edit[key];
+    }
+    overrideById.delete(base.id);
+    return { ...base, ...patch };
+  });
+
+  // Any override entries with an id that isn't one of the static defaults
+  // are genuinely new packages an admin created from scratch — keep them
+  // as-is, newest first, matching the previous behaviour.
+  const adminCreated = Array.from(overrideById.values());
+  return [...adminCreated, ...merged];
 }
 
 /** Active-only list, in the shape the public Tours & Packages page renders. */
@@ -225,7 +257,14 @@ export async function updateTourPackage(id, fields) {
 
 export async function deleteTourPackage(id) {
   const packages = await getAllTourPackages();
-  const next = packages.filter((p) => p.id !== id);
+  const isStaticDefault = defaultTourPackages.some((p) => p.id === id);
+  // A package that also exists in src/data/tourPackages.js can't be removed
+  // by dropping it from the stored override — getAllTourPackages() would
+  // just fall back to the static default and it would reappear. Deactivate
+  // it instead, which the merge above already honours.
+  const next = isStaticDefault
+    ? packages.map((p) => (p.id === id ? { ...p, active: false } : p))
+    : packages.filter((p) => p.id !== id);
   await setContent("tour_packages", next);
   return next;
 }
