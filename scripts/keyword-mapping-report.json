@@ -1,0 +1,2697 @@
+[
+  {
+    "place": "Alappuzha",
+    "phrase": "Bangalore to Alappuzha taxi",
+    "category": "Nature & Falls",
+    "targetPage": "/destinations/kerala-alleppey",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Ambur",
+    "phrase": "Bangalore to Ambur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Ambur",
+    "phrase": "Ambur to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Ambur",
+    "phrase": "Bangalore airport to Ambur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Anantapur",
+    "phrase": "Anantapur to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Anantapur",
+    "phrase": "Bangalore to Anantapur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Andhra",
+    "phrase": "Andhra to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Andhra",
+    "phrase": "Bangalore to Andhra taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "annur",
+    "phrase": "Bangalore to annur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "annur",
+    "phrase": "annur to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "annur",
+    "phrase": "Bangalore airport to annur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "anthiyur",
+    "phrase": "Bangalore to anthiyur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "anthiyur",
+    "phrase": "anthiyur to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "anthiyur",
+    "phrase": "Bangalore airport to anthiyur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Arni",
+    "phrase": "Bangalore to Arni taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Arni",
+    "phrase": "Arni to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Arni",
+    "phrase": "Bangalore airport to Arni taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "aruppukottai",
+    "phrase": "Bangalore to aruppukottai taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "aruppukottai",
+    "phrase": "aruppukottai to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "aruppukottai",
+    "phrase": "Bangalore airport to aruppukottai taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Avinashi",
+    "phrase": "Bangalore to Avinashi taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Avinashi",
+    "phrase": "Avinashi to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Avinashi",
+    "phrase": "Bangalore airport to Avinashi taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "belgaum",
+    "phrase": "bangalore to belgaum taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "belgaum",
+    "phrase": "Belgaum to Bangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Bellary",
+    "phrase": "Bangalore to Bellary taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Bellary",
+    "phrase": "Bellary to Bangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "bhatkal",
+    "phrase": "bangalore to bhatkal taxi",
+    "category": "Nature & Falls",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "bhatkal",
+    "phrase": "Bhatkal to Bangalore taxi",
+    "category": "Nature & Falls",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Bhavani",
+    "phrase": "Bangalore to Bhavani taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Bhavani",
+    "phrase": "Bhavani to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Bhavani",
+    "phrase": "Bangalore airport to Bhavani taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "byndur",
+    "phrase": "bangalore to byndur taxi",
+    "category": "Nature & Falls",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "byndur",
+    "phrase": "Byndur to Bangalore taxi",
+    "category": "Nature & Falls",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "challakere",
+    "phrase": "bangalore to challakere taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "challakere",
+    "phrase": "Challakere to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Chengalpattu",
+    "phrase": "Bangalore to Chengalpattu taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Chengalpattu",
+    "phrase": "Chengalpattu to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Chengalpattu",
+    "phrase": "Bangalore airport to Chengalpattu taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Chennai",
+    "phrase": "Bangalore to Chennai taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Chennai",
+    "phrase": "Chennai to Bangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Chennai",
+    "phrase": "Bangalore airport to Chennai taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Chidambaram",
+    "phrase": "Bangalore to Chidambaram taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Chidambaram",
+    "phrase": "Chidambaram to Bangalore taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Chidambaram",
+    "phrase": "Bangalore airport to Chidambaram taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "chikkamangalore",
+    "phrase": "bangalore to chikkamangalore taxi",
+    "category": "Hill Stations",
+    "targetPage": "/destinations/chikmagalur",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "chikkamangalore",
+    "phrase": "Chikkamangalore to Bangalore taxi",
+    "category": "Hill Stations",
+    "targetPage": "/destinations/chikmagalur",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Chitradurga",
+    "phrase": "bangalore to Chitradurga taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/destinations/chitradurga",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Chitradurga",
+    "phrase": "Chitradurga to Bangalore taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/destinations/chitradurga",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Chittoor",
+    "phrase": "Chittoor to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Chittoor",
+    "phrase": "Bangalore to Chittoor taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Cochin",
+    "phrase": "Bangalore to Cochin taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Coimbatore",
+    "phrase": "Bangalore to Coimbatore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Coimbatore",
+    "phrase": "Coimbatore to Bangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Coimbatore",
+    "phrase": "Bangalore airport to Coimbatore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "coorg",
+    "phrase": "bangalore to coorg taxi",
+    "category": "Hill Stations",
+    "targetPage": "/destinations/coorg",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "coorg",
+    "phrase": "Coorg to Bangalore taxi",
+    "category": "Hill Stations",
+    "targetPage": "/destinations/coorg",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Cuddalore",
+    "phrase": "Bangalore to Cuddalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Cuddalore",
+    "phrase": "Cuddalore to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Cuddalore",
+    "phrase": "Bangalore airport to Cuddalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Davanagere",
+    "phrase": "bangalore to Davanagere cabs",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Davanagere",
+    "phrase": "Davanagere to Bangalore cabs",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "devakottai",
+    "phrase": "Bangalore to devakottai taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "devakottai",
+    "phrase": "devakottai to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "devakottai",
+    "phrase": "Bangalore airport to devakottai taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "dharapuram",
+    "phrase": "Bangalore to dharapuram taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "dharapuram",
+    "phrase": "dharapuram to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "dharapuram",
+    "phrase": "Bangalore airport to dharapuram taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Dharmapuri",
+    "phrase": "Bangalore to Dharmapuri taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Dharmapuri",
+    "phrase": "Dharmapuri to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Dharmapuri",
+    "phrase": "Bangalore airport to Dharmapuri taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Dharmasthala",
+    "phrase": "bangalore to Dharmasthala taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Dharmasthala",
+    "phrase": "Dharmasthala to Bangalore taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Dharmavaram",
+    "phrase": "Dharmavaram to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Dharmavaram",
+    "phrase": "Bangalore to Dharmavaram taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Dharwad",
+    "phrase": "bangalore to Dharwad taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Dharwad",
+    "phrase": "Dharwad to Bangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Dindigul",
+    "phrase": "Bangalore to Dindigul taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Dindigul",
+    "phrase": "Dindigul to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Dindigul",
+    "phrase": "Bangalore airport to Dindigul taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Ernakulam",
+    "phrase": "Bangalore to Ernakulam taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Erode",
+    "phrase": "Bangalore to Erode taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Erode",
+    "phrase": "Erode to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Erode",
+    "phrase": "Bangalore airport to Erode taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Gadag",
+    "phrase": "Bangalore to Gadag taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Gadag",
+    "phrase": "Gadag to Bangalore taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "gobichettipalayam",
+    "phrase": "Bangalore to gobichettipalayam taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "gobichettipalayam",
+    "phrase": "gobichettipalayam to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "gobichettipalayam",
+    "phrase": "Bangalore airport to gobichettipalayam taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "gokarna",
+    "phrase": "bangalore to gokarna taxi",
+    "category": "Nature & Falls",
+    "targetPage": "/destinations/gokarna",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "gokarna",
+    "phrase": "Gokarna to Bangalore taxi",
+    "category": "Nature & Falls",
+    "targetPage": "/destinations/gokarna",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Gooty",
+    "phrase": "Gooty to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Gooty",
+    "phrase": "Bangalore to gooty taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "gudiyattam",
+    "phrase": "Bangalore to gudiyattam taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "gudiyattam",
+    "phrase": "gudiyattam to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "gudiyattam",
+    "phrase": "Bangalore airport to gudiyattam taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Guruvayur",
+    "phrase": "Bangalore to Guruvayur taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Hampi",
+    "phrase": "Bangalore to Hampi cabs",
+    "category": "Heritage & Culture",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Hampi",
+    "phrase": "Hampi to Bangalore cabs",
+    "category": "Heritage & Culture",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Hassan",
+    "phrase": "bangalore to Hassan taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/destinations/hassan",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Hassan",
+    "phrase": "Hassan to Bangalore taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/destinations/hassan",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "honnavar",
+    "phrase": "bangalore to honnavar taxi",
+    "category": "Nature & Falls",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "honnavar",
+    "phrase": "Honnavar to Bangalore taxi",
+    "category": "Nature & Falls",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Hospet",
+    "phrase": "Bangalore to Hospet taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Hospet",
+    "phrase": "Hospet to Bangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Hosur",
+    "phrase": "Bangalore to Hosur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Hosur",
+    "phrase": "Hosur to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Hosur",
+    "phrase": "Bangalore airport to Hosur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Hubli",
+    "phrase": "bangalore to Hubli taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Hubli",
+    "phrase": "Hubli to Bangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Hyderabad",
+    "phrase": "Hyderabad to Bangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/destinations/hyderabad",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Hyderabad",
+    "phrase": "Bangalore to Hyderabad taxi",
+    "category": "Major Cities",
+    "targetPage": "/destinations/hyderabad",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Kadapa",
+    "phrase": "Kadapa to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kadapa",
+    "phrase": "Bangalore to Kadapa taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kadiri",
+    "phrase": "Kadiri to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kadiri",
+    "phrase": "Bangalore to kadiri taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kalahasti",
+    "phrase": "Kalahasti to Bangalore taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kalahasti",
+    "phrase": "Bangalore to Kalahasti taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "kallakurichi",
+    "phrase": "Bangalore to kallakurichi taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "kallakurichi",
+    "phrase": "kallakurichi to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "kallakurichi",
+    "phrase": "Bangalore airport to kallakurichi taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kanchipuram",
+    "phrase": "Bangalore to Kanchipuram taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kanchipuram",
+    "phrase": "Kanchipuram to Bangalore taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kanchipuram",
+    "phrase": "Bangalore airport to Kanchipuram taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "kangayam",
+    "phrase": "Bangalore to kangayam taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "kangayam",
+    "phrase": "kangayam to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "kangayam",
+    "phrase": "Bangalore airport to kangayam taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kannur",
+    "phrase": "Bangalore to Kannur taxi",
+    "category": "Nature & Falls",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kanyakumari",
+    "phrase": "Bangalore to Kanyakumari taxi",
+    "category": "Nature & Falls",
+    "targetPage": "/destinations/kanyakumari",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Kanyakumari",
+    "phrase": "Kanyakumari to Bangalore taxi",
+    "category": "Nature & Falls",
+    "targetPage": "/destinations/kanyakumari",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Kanyakumari",
+    "phrase": "Bangalore airport to Kanyakumari taxi",
+    "category": "Nature & Falls",
+    "targetPage": "/destinations/kanyakumari",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Karaikal",
+    "phrase": "Bangalore to Karaikal taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Karaikal",
+    "phrase": "Karaikal to Bangalore taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Karaikal",
+    "phrase": "Bangalore airport to Karaikal taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Karaikudi",
+    "phrase": "Bangalore to Karaikudi taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Karaikudi",
+    "phrase": "Karaikudi to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Karaikudi",
+    "phrase": "Bangalore airport to Karaikudi taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Karur",
+    "phrase": "Bangalore to Karur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Karur",
+    "phrase": "Karur to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Karur",
+    "phrase": "Bangalore airport to Karur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "karwar",
+    "phrase": "bangalore to karwar taxi",
+    "category": "Nature & Falls",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "karwar",
+    "phrase": "Karwar to Bangalore taxi",
+    "category": "Nature & Falls",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kasaragod",
+    "phrase": "Bangalore to Kasaragod taxi",
+    "category": "Nature & Falls",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Katpadi",
+    "phrase": "Bangalore to Katpadi taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Katpadi",
+    "phrase": "Katpadi to Bangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Katpadi",
+    "phrase": "Bangalore airport to Katpadi taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kavali",
+    "phrase": "Kavali to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kavali",
+    "phrase": "Bangalore to kavali taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Khammam",
+    "phrase": "Khammam to Bangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Khammam",
+    "phrase": "Bangalore to Khammam taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kottayam",
+    "phrase": "Bangalore to Kottayam taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Krishnagiri",
+    "phrase": "Bangalore to Krishnagiri taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Krishnagiri",
+    "phrase": "Krishnagiri to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Krishnagiri",
+    "phrase": "Bangalore airport to Krishnagiri taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kukke",
+    "phrase": "bangalore to Kukke cabs",
+    "category": "Pilgrimage",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kukke",
+    "phrase": "Kukke to Bangalore cabs",
+    "category": "Pilgrimage",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kumbakonam",
+    "phrase": "Bangalore to Kumbakonam taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kumbakonam",
+    "phrase": "Kumbakonam to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kurnool",
+    "phrase": "Kurnool to Bangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kurnool",
+    "phrase": "Bangalore to Kurnool taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kushalnagar",
+    "phrase": "bangalore to Kushalnagar taxi",
+    "category": "Hill Stations",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kushalnagar",
+    "phrase": "Kushalnagar to Bangalore taxi",
+    "category": "Hill Stations",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Madanapalle",
+    "phrase": "Madanapalle to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Madanapalle",
+    "phrase": "Bangalore to madanapalle taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Madikeri",
+    "phrase": "bangalore to Madikeri taxi",
+    "category": "Hill Stations",
+    "targetPage": "/destinations/madikeri",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Madikeri",
+    "phrase": "Madikeri to Bangalore taxi",
+    "category": "Hill Stations",
+    "targetPage": "/destinations/madikeri",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Madurai",
+    "phrase": "Bangalore to Madurai taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/destinations/madurai",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Madurai",
+    "phrase": "Madurai to Bangalore taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/destinations/madurai",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Madurai",
+    "phrase": "Bangalore airport to Madurai taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/destinations/madurai",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Mahabalipuram",
+    "phrase": "Bangalore to Mahabalipuram taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Mahabalipuram",
+    "phrase": "Mahabalipuram to Bangalore taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Mahabalipuram",
+    "phrase": "Bangalore airport to Mahabalipuram taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Mahabubnagar",
+    "phrase": "Mahabubnagar to Bangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Mahabubnagar",
+    "phrase": "Bangalore to Mahabubnagar taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Malappuram",
+    "phrase": "Bangalore to Malappuram taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "mandya",
+    "phrase": "bangalore to mandya taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "mandya",
+    "phrase": "Mandya to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "mangalore",
+    "phrase": "bangalore to mangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/destinations/mangalore",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "mangalore",
+    "phrase": "Mangalore to Bangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/destinations/mangalore",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "manipal",
+    "phrase": "bangalore to manipal taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "manipal",
+    "phrase": "Manipal to Bangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Mannargudi",
+    "phrase": "Bangalore to Mannargudi taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Mannargudi",
+    "phrase": "Mannargudi to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Mannargudi",
+    "phrase": "Bangalore airport to Mannargudi taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Mantralayam",
+    "phrase": "Bangalore to Mantralayam taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/destinations/mantralayam",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Mantralayam",
+    "phrase": "Mantralayam to Bangalore taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/destinations/mantralayam",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Mettur",
+    "phrase": "Bangalore to Mettur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Mettur",
+    "phrase": "Mettur to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Mettur",
+    "phrase": "Bangalore airport to Mettur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "mudigere",
+    "phrase": "bangalore to mudigere taxi",
+    "category": "Hill Stations",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "mudigere",
+    "phrase": "Mudigere to Bangalore taxi",
+    "category": "Hill Stations",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Munnar",
+    "phrase": "Bangalore to Munnar taxi",
+    "category": "Hill Stations",
+    "targetPage": "/destinations/munnar",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Murudeshwar",
+    "phrase": "bangalore to Murudeshwar taxi",
+    "category": "Nature & Falls",
+    "targetPage": "/destinations/murudeshwara",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Murudeshwar",
+    "phrase": "Murudeshwar to Bangalore taxi",
+    "category": "Nature & Falls",
+    "targetPage": "/destinations/murudeshwara",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "mysore",
+    "phrase": "bangalore to mysore cabs",
+    "category": "Heritage & Culture",
+    "targetPage": "/destinations/mysore",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "mysore",
+    "phrase": "Mysore to Bangalore cabs",
+    "category": "Heritage & Culture",
+    "targetPage": "/destinations/mysore",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Nagapattinam",
+    "phrase": "Bangalore to Nagapattinam taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Nagapattinam",
+    "phrase": "Nagapattinam to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Nagapattinam",
+    "phrase": "Bangalore airport to Nagapattinam taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Nagercoil",
+    "phrase": "Bangalore to Nagercoil taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Nagercoil",
+    "phrase": "Nagercoil to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Nagercoil",
+    "phrase": "Bangalore airport to Nagercoil taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Namakkal",
+    "phrase": "Bangalore to Namakkal taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Namakkal",
+    "phrase": "Namakkal to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Namakkal",
+    "phrase": "Bangalore airport to Namakkal taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Nellore",
+    "phrase": "Nellore to Bangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Nellore",
+    "phrase": "Bangalore to Nellore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "omlur",
+    "phrase": "Bangalore to omlur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "omlur",
+    "phrase": "omlur to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "omlur",
+    "phrase": "Bangalore airport to omlur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Ongole",
+    "phrase": "Ongole to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Ongole",
+    "phrase": "Bangalore to Ongole taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "ooty",
+    "phrase": "bangalore to ooty taxi",
+    "category": "Hill Stations",
+    "targetPage": "/destinations/ooty",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "ooty",
+    "phrase": "Ooty to Bangalore taxi",
+    "category": "Hill Stations",
+    "targetPage": "/destinations/ooty",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Palakkad",
+    "phrase": "Bangalore to Palakkad taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Palamner",
+    "phrase": "Palamner to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Palamner",
+    "phrase": "Bangalore to palamner taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Palani",
+    "phrase": "Bangalore to Palani taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Palani",
+    "phrase": "Palani to Bangalore taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Palani",
+    "phrase": "Bangalore airport to Palani taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "paramakudi",
+    "phrase": "Bangalore to paramakudi taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "paramakudi",
+    "phrase": "paramakudi to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "paramakudi",
+    "phrase": "Bangalore airport to paramakudi taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "paramathi velur",
+    "phrase": "Bangalore to paramathi velur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "paramathi velur",
+    "phrase": "paramathi velur to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "paramathi velur",
+    "phrase": "Bangalore airport to paramathi velur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "pattukottai",
+    "phrase": "Bangalore to pattukottai taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "pattukottai",
+    "phrase": "pattukottai to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "pattukottai",
+    "phrase": "Bangalore airport to pattukottai taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Penukonda",
+    "phrase": "Penukonda to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Penukonda",
+    "phrase": "Bangalore to penukonda taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Pollachi",
+    "phrase": "Bangalore to Pollachi taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Pollachi",
+    "phrase": "Pollachi to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Pollachi",
+    "phrase": "Bangalore airport to Pollachi taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Pondicherry",
+    "phrase": "Bangalore to Pondicherry taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/destinations/pondicherry",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Pondicherry",
+    "phrase": "Pondicherry to Bangalore taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/destinations/pondicherry",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Pondicherry",
+    "phrase": "Bangalore airport to Pondicherry taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/destinations/pondicherry",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Pudukkottai",
+    "phrase": "Bangalore to Pudukkottai taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Pudukkottai",
+    "phrase": "Pudukkottai to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Pudukkottai",
+    "phrase": "Bangalore airport to Pudukkottai taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Punganur",
+    "phrase": "Punganur to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Punganur",
+    "phrase": "Bangalore to punganur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Raichur",
+    "phrase": "Bangalore to Raichur taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Raichur",
+    "phrase": "Raichur to Bangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Rajahmundry",
+    "phrase": "Rajahmundry to Bangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Rajahmundry",
+    "phrase": "Bangalore to Rajahmundry taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Rajapalayam",
+    "phrase": "Bangalore to Rajapalayam taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Rajapalayam",
+    "phrase": "Rajapalayam to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Rajapalayam",
+    "phrase": "Bangalore airport to Rajapalayam taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Ramanathapuram",
+    "phrase": "Bangalore to Ramanathapuram taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Ramanathapuram",
+    "phrase": "Ramanathapuram to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Ramanathapuram",
+    "phrase": "Bangalore airport to Ramanathapuram taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "rameshwaram",
+    "phrase": "Bangalore to rameshwaram taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/destinations/rameshwaram",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "rameshwaram",
+    "phrase": "rameshwaram to Bangalore taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/destinations/rameshwaram",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "rameshwaram",
+    "phrase": "Bangalore airport to rameshwaram taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/destinations/rameshwaram",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "ranibennur",
+    "phrase": "bangalore to ranibennur taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "ranibennur",
+    "phrase": "Ranibennur to Bangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Rayachoti",
+    "phrase": "Rayachoti to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Rayachoti",
+    "phrase": "Bangalore to rayachoti taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Sabarimala",
+    "phrase": "Bangalore to Sabarimala taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "sakleshpur",
+    "phrase": "bangalore to sakleshpur taxi",
+    "category": "Hill Stations",
+    "targetPage": "/destinations/sakleshpur",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "sakleshpur",
+    "phrase": "Sakleshpur to Bangalore taxi",
+    "category": "Hill Stations",
+    "targetPage": "/destinations/sakleshpur",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "sankagiri",
+    "phrase": "Bangalore to sankagiri taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "sankagiri",
+    "phrase": "sankagiri to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "sankagiri",
+    "phrase": "Bangalore airport to sankagiri taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "sathyamangala",
+    "phrase": "Bangalore to sathyamangala taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "sathyamangala",
+    "phrase": "sathyamangala to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "sathyamangala",
+    "phrase": "Bangalore airport to sathyamangala taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Shirkali",
+    "phrase": "Bangalore to Shirkali taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Shirkali",
+    "phrase": "Shirkali to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Shirkali",
+    "phrase": "Bangalore airport to Shirkali taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "shivamogga",
+    "phrase": "bangalore to shivamogga taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/destinations/shivamogga",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "shivamogga",
+    "phrase": "Shivamogga to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/destinations/shivamogga",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "sirsi",
+    "phrase": "bangalore to sirsi cabs",
+    "category": "Nature & Falls",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "sirsi",
+    "phrase": "Sirsi to Bangalore cabs",
+    "category": "Nature & Falls",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Sivakasi",
+    "phrase": "Bangalore to Sivakasi taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Sivakasi",
+    "phrase": "Sivakasi to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Sivakasi",
+    "phrase": "Bangalore airport to Sivakasi taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "sringeri",
+    "phrase": "bangalore to sringeri taxi",
+    "category": "Hill Stations",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "sringeri",
+    "phrase": "Sringeri to Bangalore taxi",
+    "category": "Hill Stations",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Srisailam",
+    "phrase": "Srisailam to Bangalore taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Srisailam",
+    "phrase": "Bangalore to Srisailam taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Telangana",
+    "phrase": "Telangana to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Telangana",
+    "phrase": "Bangalore to Telangana taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "tenkasi",
+    "phrase": "Bangalore to tenkasi taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "tenkasi",
+    "phrase": "tenkasi to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "tenkasi",
+    "phrase": "Bangalore airport to tenkasi taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Thalassery",
+    "phrase": "Bangalore to Thalassery taxi",
+    "category": "Nature & Falls",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Thanjavur",
+    "phrase": "Bangalore to Thanjavur taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Thanjavur",
+    "phrase": "Thanjavur to Bangalore taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Thanjavur",
+    "phrase": "Bangalore airport toThanjavur taxi",
+    "category": "Heritage & Culture",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Thekkady",
+    "phrase": "Bangalore to Thekkady taxi",
+    "category": "Nature & Falls",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Theni",
+    "phrase": "Bangalore to Theni taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Theni",
+    "phrase": "Theni to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Theni",
+    "phrase": "Bangalore airport to Theni taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Thiruvananthapuram",
+    "phrase": "Bangalore to Thiruvananthapuram taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "thiruvarur",
+    "phrase": "Bangalore to thiruvarur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "thiruvarur",
+    "phrase": "thiruvarur to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "thiruvarur",
+    "phrase": "Bangalore airport to thiruvarur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Thoothukudi",
+    "phrase": "Bangalore to Thoothukudi taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Thoothukudi",
+    "phrase": "Thoothukudi to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Thoothukudi",
+    "phrase": "Bangalore airport to Thoothukudi taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Thrissur",
+    "phrase": "Bangalore to Thrissur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "thuraiyur",
+    "phrase": "Bangalore to thuraiyur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "thuraiyur",
+    "phrase": "thuraiyur to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "thuraiyur",
+    "phrase": "Bangalore airport to thuraiyur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "tindivanam",
+    "phrase": "Bangalore to tindivanam taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "tindivanam",
+    "phrase": "tindivanam to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "tindivanam",
+    "phrase": "Bangalore airport to tindivanam taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Tiruchendur",
+    "phrase": "Bangalore to Tiruchendur taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Tiruchendur",
+    "phrase": "Tiruchendur to Bangalore taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Tiruchendur",
+    "phrase": "Bangalore airport to Tiruchendur taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "tiruchengode",
+    "phrase": "Bangalore to tiruchengode taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "tiruchengode",
+    "phrase": "tiruchengode to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "tiruchengode",
+    "phrase": "Bangalore airport to tiruchengode taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Tirunelveli",
+    "phrase": "Bangalore to Tirunelveli taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Tirunelveli",
+    "phrase": "Tirunelveli to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Tirunelveli",
+    "phrase": "Bangalore airport to Tirunelveli taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Tirupati",
+    "phrase": "Tirupati to Bangalore taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/destinations/tirupati",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Tirupati",
+    "phrase": "Bangalore to Tirupati taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/destinations/tirupati",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Tirupattur",
+    "phrase": "Bangalore to Tirupattur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Tirupattur",
+    "phrase": "Tirupattur to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Tirupattur",
+    "phrase": "Bangalore airport to Tirupattur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Tirupur",
+    "phrase": "Bangalore to Tirupur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Tirupur",
+    "phrase": "Tirupur to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Tirupur",
+    "phrase": "Bangalore airport to Tirupur taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Tiruvannamalai",
+    "phrase": "Bangalore to Tiruvannamalai taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Tiruvannamalai",
+    "phrase": "Tiruvannamalai to Bangalore taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Tiruvannamalai",
+    "phrase": "Bangalore airport to Tiruvannamalai taxi",
+    "category": "Pilgrimage",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "toranagallu",
+    "phrase": "Bangalore to toranagallu taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "toranagallu",
+    "phrase": "Toranagallu to Bangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Trichy",
+    "phrase": "Bangalore to Trichy taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Trichy",
+    "phrase": "Trichy to Bangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Trichy",
+    "phrase": "Bangalore airport to Trichy taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Trivandrum",
+    "phrase": "Bangalore to Trivandrum taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "tumkur",
+    "phrase": "bangalore to tumkur cabs",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "tumkur",
+    "phrase": "Tumkur to Bangalore cabs",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "udumalaipettai",
+    "phrase": "Bangalore to udumalaipettai taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "udumalaipettai",
+    "phrase": "udumalaipettai to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Udupi",
+    "phrase": "bangalore to Udupi cabs",
+    "category": "Major Cities",
+    "targetPage": "/destinations/udupi",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Udupi",
+    "phrase": "Udupi to Bangalore cabs",
+    "category": "Major Cities",
+    "targetPage": "/destinations/udupi",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "vanambadi",
+    "phrase": "Bangalore to vanambadi taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "vanambadi",
+    "phrase": "vanambadi to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "vanambadi",
+    "phrase": "Bangalore airport to vanambadi taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Venkatagirikota",
+    "phrase": "Venkatagirikota to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Venkatagirikota",
+    "phrase": "Bangalore to venkatagirikota taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Vijayawada",
+    "phrase": "Vijayawada to Bangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Vijayawada",
+    "phrase": "Bangalore to Vijayawada taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Villupuram",
+    "phrase": "Bangalore to Villupuram taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Villupuram",
+    "phrase": "Villupuram to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Villupuram",
+    "phrase": "Bangalore airport to Villupuram taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "virudhunagar",
+    "phrase": "Bangalore to virudhunagar taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "virudhunagar",
+    "phrase": "virudhunagar to Bangalore taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Vizag",
+    "phrase": "Vizag to Bangalore taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Vizag",
+    "phrase": "Bangalore to Vizag taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Wayanad",
+    "phrase": "Bangalore to Wayanad taxi",
+    "category": "Hill Stations",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "North Goa",
+    "phrase": "North Goa taxi service",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "North Goa",
+    "phrase": "outstation cabs in North Goa",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "North Goa",
+    "phrase": "North Goa airport taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "South Goa",
+    "phrase": "South Goa taxi service",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "South Goa",
+    "phrase": "outstation cabs in South Goa",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "South Goa",
+    "phrase": "South Goa airport taxi",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Idukki",
+    "phrase": "Idukki taxi service",
+    "category": "Hill Stations",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Idukki",
+    "phrase": "outstation cabs in Idukki",
+    "category": "Hill Stations",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Idukki",
+    "phrase": "Idukki sightseeing cabs",
+    "category": "Hill Stations",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kozhikode",
+    "phrase": "Kozhikode taxi service",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kozhikode",
+    "phrase": "Calicut cab service",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Kozhikode",
+    "phrase": "outstation cabs in Calicut",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Ariyalur",
+    "phrase": "Ariyalur taxi service",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Ariyalur",
+    "phrase": "outstation cabs in Ariyalur",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Mayiladuthurai",
+    "phrase": "Mayiladuthurai taxi service",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Mayiladuthurai",
+    "phrase": "outstation cabs in Mayiladuthurai",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Nilgiris",
+    "phrase": "Nilgiris taxi service",
+    "category": "Hill Stations",
+    "targetPage": "/destinations/ooty",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Nilgiris",
+    "phrase": "Nilgiris sightseeing cabs",
+    "category": "Hill Stations",
+    "targetPage": "/destinations/ooty",
+    "usage": "Destination page — title/H1/description area, plus 'Also searched as' chip"
+  },
+  {
+    "place": "Perambalur",
+    "phrase": "Perambalur taxi service",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Perambalur",
+    "phrase": "outstation cabs in Perambalur",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Ranipet",
+    "phrase": "Ranipet taxi service",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Ranipet",
+    "phrase": "outstation cabs in Ranipet",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Salem",
+    "phrase": "Salem taxi service",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Salem",
+    "phrase": "outstation cabs in Salem",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Salem",
+    "phrase": "Salem airport taxi",
+    "category": "Major Cities",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Sivaganga",
+    "phrase": "Sivaganga taxi service",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Sivaganga",
+    "phrase": "outstation cabs in Sivaganga",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Tiruvallur",
+    "phrase": "Tiruvallur taxi service",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  },
+  {
+    "place": "Tiruvallur",
+    "phrase": "outstation cabs in Tiruvallur",
+    "category": "Outstation Getaways",
+    "targetPage": "/routes",
+    "usage": "/routes hub — region-grouped badge (text only, no dedicated page)"
+  }
+]

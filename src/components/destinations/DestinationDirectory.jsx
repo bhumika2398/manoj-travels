@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { destinationDirectoryCategories } from "@/data/destinationDirectory";
+import { destinationDirectoryCategories, destinationDirectoryRegions } from "@/data/destinationDirectory";
 
 const PinIcon = (props) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true" {...props}>
@@ -20,6 +20,7 @@ const PinIcon = (props) => (
  */
 export function DestinationDirectory({ items }) {
   const [category, setCategory] = useState("All destinations");
+  const [region, setRegion] = useState("All regions");
   const [query, setQuery] = useState("");
 
   const counts = useMemo(() => {
@@ -28,11 +29,18 @@ export function DestinationDirectory({ items }) {
     return c;
   }, [items]);
 
+  const regionCounts = useMemo(() => {
+    const c = { "All regions": items.length };
+    for (const item of items) if (item.region) c[item.region] = (c[item.region] || 0) + 1;
+    return c;
+  }, [items]);
+
   const grouped = useMemo(() => {
     const q = query.trim().toLowerCase();
     const filtered = items.filter((item) => {
       const matchesCategory = category === "All destinations" || item.category === category;
-      if (!matchesCategory) return false;
+      const matchesRegion = region === "All regions" || item.region === region;
+      if (!matchesCategory || !matchesRegion) return false;
       if (!q) return true;
       return `${item.name} ${item.description}`.toLowerCase().includes(q);
     });
@@ -43,18 +51,36 @@ export function DestinationDirectory({ items }) {
       byCategory.get(item.category).push(item);
     }
     return Array.from(byCategory.entries());
-  }, [items, category, query]);
+  }, [items, category, region, query]);
 
   return (
     <div className="rounded-[var(--radius-lg)] bg-[var(--color-ink)] p-6 text-[var(--color-text-on-dark)] sm:p-8 lg:p-10">
-      <input
-        type="search"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        placeholder="Search a destination — Mysore, Coorg, Ooty, Munnar..."
-        aria-label="Search destinations"
-        className="w-full rounded-[var(--radius-sm)] border border-[var(--color-line-on-dark)] bg-white/5 px-4 py-3 text-[16px] text-[var(--color-text-on-dark)] outline-none transition-colors placeholder:text-[var(--color-text-on-dark-muted)] focus:border-[var(--color-accent-soft)] sm:max-w-sm"
-      />
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+        <input
+          type="search"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Search a destination — Mysore, Coorg, Ooty, Munnar..."
+          aria-label="Search destinations"
+          className="w-full rounded-[var(--radius-sm)] border border-[var(--color-line-on-dark)] bg-white/5 px-4 py-3 text-[16px] text-[var(--color-text-on-dark)] outline-none transition-colors placeholder:text-[var(--color-text-on-dark-muted)] focus:border-[var(--color-accent-soft)] sm:max-w-sm"
+        />
+        {/* Secondary filter dimension — state/region, independent of the
+            category pills below so both can narrow the list together. */}
+        <select
+          value={region}
+          onChange={(e) => setRegion(e.target.value)}
+          aria-label="Filter by region"
+          className="w-full rounded-[var(--radius-sm)] border border-[var(--color-line-on-dark)] bg-white/5 px-4 py-3 text-[15px] text-[var(--color-text-on-dark-muted)] outline-none transition-colors focus:border-[var(--color-accent-soft)] sm:w-auto"
+        >
+          {destinationDirectoryRegions
+            .filter((r) => r === "All regions" || regionCounts[r] > 0)
+            .map((r) => (
+              <option key={r} value={r} className="bg-[var(--color-ink)]">
+                {r} ({regionCounts[r] || 0})
+              </option>
+            ))}
+        </select>
+      </div>
 
       <div className="mt-5 -mx-6 flex gap-2.5 overflow-x-auto px-6 pb-2 sm:mx-0 sm:flex-wrap sm:px-0 sm:pb-0">
         {destinationDirectoryCategories

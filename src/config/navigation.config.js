@@ -58,6 +58,7 @@ export const footerNav = {
     { label: "Outstation Routes", href: "/routes" },
     { label: "Tours & Packages", href: "/tours-packages" },
     { label: "Gallery", href: "/gallery" },
+    { label: "Travel Guides", href: "/blog" },
     { label: "About Us", href: "/about" },
     { label: "FAQ", href: "/faq" },
   ],

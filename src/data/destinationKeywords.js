@@ -1229,6 +1229,112 @@ export const destinationKeywords = [
     distanceKm: null,
     description: null,
   },
+
+  // --- Added from South_India_Tourism_Taxi_Directory.pdf,
+  // Taxi_Services_Directory.pdf, Goa_Taxi_Services_Directory.pdf,
+  // Kerala_Taxi_Services_Directory.pdf and tamilnadu_taxi_keywords.pdf --
+  // genuinely new places only; every place already covered by the CSV-based
+  // entries above (matched, including spelling variants like
+  // Chikmagalur/Chikkamangalore, Trichy/Tiruchirappalli, Villupuram/
+  // Viluppuram, Alappuzha/Alleppey) was left untouched rather than
+  // duplicated. Phrases are verbatim from the source PDF, not the CSV
+  // "Bangalore to X taxi" pattern, so they're kept as their own entries.
+  {
+    place: "North Goa",
+    category: "Outstation Getaways",
+    phrases: ["North Goa taxi service", "outstation cabs in North Goa", "North Goa airport taxi"],
+    href: null,
+    distanceKm: null,
+    description: null,
+  },
+  {
+    place: "South Goa",
+    category: "Outstation Getaways",
+    phrases: ["South Goa taxi service", "outstation cabs in South Goa", "South Goa airport taxi"],
+    href: null,
+    distanceKm: null,
+    description: null,
+  },
+  {
+    place: "Idukki",
+    category: "Hill Stations",
+    phrases: ["Idukki taxi service", "outstation cabs in Idukki", "Idukki sightseeing cabs"],
+    href: null,
+    distanceKm: null,
+    description: null,
+  },
+  {
+    place: "Kozhikode",
+    category: "Major Cities",
+    phrases: ["Kozhikode taxi service", "Calicut cab service", "outstation cabs in Calicut"],
+    href: null,
+    distanceKm: null,
+    description: null,
+  },
+  {
+    place: "Ariyalur",
+    category: "Outstation Getaways",
+    phrases: ["Ariyalur taxi service", "outstation cabs in Ariyalur"],
+    href: null,
+    distanceKm: null,
+    description: null,
+  },
+  {
+    place: "Mayiladuthurai",
+    category: "Outstation Getaways",
+    phrases: ["Mayiladuthurai taxi service", "outstation cabs in Mayiladuthurai"],
+    href: null,
+    distanceKm: null,
+    description: null,
+  },
+  {
+    place: "Nilgiris",
+    category: "Hill Stations",
+    phrases: ["Nilgiris taxi service", "Nilgiris sightseeing cabs"],
+    href: "/destinations/ooty",
+    distanceKm: null,
+    description: null,
+  },
+  {
+    place: "Perambalur",
+    category: "Outstation Getaways",
+    phrases: ["Perambalur taxi service", "outstation cabs in Perambalur"],
+    href: null,
+    distanceKm: null,
+    description: null,
+  },
+  {
+    place: "Ranipet",
+    category: "Outstation Getaways",
+    phrases: ["Ranipet taxi service", "outstation cabs in Ranipet"],
+    href: null,
+    distanceKm: null,
+    description: null,
+  },
+  {
+    place: "Salem",
+    category: "Major Cities",
+    phrases: ["Salem taxi service", "outstation cabs in Salem", "Salem airport taxi"],
+    href: null,
+    distanceKm: null,
+    description: null,
+  },
+  {
+    place: "Sivaganga",
+    category: "Outstation Getaways",
+    phrases: ["Sivaganga taxi service", "outstation cabs in Sivaganga"],
+    href: null,
+    distanceKm: null,
+    description: null,
+  },
+  {
+    place: "Tiruvallur",
+    category: "Outstation Getaways",
+    phrases: ["Tiruvallur taxi service", "outstation cabs in Tiruvallur"],
+    href: null,
+    distanceKm: null,
+    description: null,
+  },
 ];
 
 export const destinationCategories = [

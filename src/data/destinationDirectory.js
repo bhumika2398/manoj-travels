@@ -18,6 +18,7 @@ export const destinationDirectory = [
   {
     category: "Hill Stations",
     name: "Madikeri / Coorg",
+    region: "Karnataka",
     href: "/destinations/coorg",
     distanceKm: 260,
     description: "Misty coffee estates, waterfalls and valley viewpoints across Karnataka's coffee country.",
@@ -25,6 +26,7 @@ export const destinationDirectory = [
   {
     category: "Hill Stations",
     name: "Chikmagalur",
+    region: "Karnataka",
     href: "/destinations/chikmagalur",
     distanceKm: 245,
     description: "Karnataka's coffee land, with trekking trails up to Mullayanagiri and Baba Budangiri.",
@@ -32,6 +34,7 @@ export const destinationDirectory = [
   {
     category: "Hill Stations",
     name: "Savandurga Hills",
+    region: "Karnataka",
     href: null,
     distanceKm: 55,
     description: "One of Asia's largest monolithic hills, a popular day trek near Bangalore.",
@@ -39,6 +42,7 @@ export const destinationDirectory = [
   {
     category: "Hill Stations",
     name: "Bilikal Rangaswamy Betta",
+    region: "Karnataka",
     href: null,
     distanceKm: 90,
     description: "Forest hill shrine near Kanakapura with panoramic Western Ghats views.",
@@ -46,6 +50,7 @@ export const destinationDirectory = [
   {
     category: "Hill Stations",
     name: "Chikkaballapura (Nandi region)",
+    region: "Karnataka",
     href: "/destinations/nandi-hills",
     distanceKm: 60,
     description: "Gateway to Nandi Hills, Skandagiri and cool early-morning trekking country.",
@@ -53,6 +58,7 @@ export const destinationDirectory = [
   {
     category: "Hill Stations",
     name: "Sakleshpur",
+    region: "Karnataka",
     href: "/destinations/sakleshpur",
     distanceKm: 220,
     description: "Misty Western Ghats hill town on the Bengaluru–Mangalore highway.",
@@ -60,6 +66,7 @@ export const destinationDirectory = [
   {
     category: "Hill Stations",
     name: "Kemmangundi",
+    region: "Karnataka",
     href: null,
     distanceKm: 270,
     description: "A cool Western Ghats hill resort once used as a summer retreat by the Mysore royal family.",
@@ -69,6 +76,7 @@ export const destinationDirectory = [
   {
     category: "Heritage & Culture",
     name: "Hampi",
+    region: "Karnataka",
     href: null,
     distanceKm: 340,
     description: "UNESCO World Heritage ruins of the Vijayanagara empire, spread across a boulder-strewn landscape.",
@@ -76,6 +84,7 @@ export const destinationDirectory = [
   {
     category: "Heritage & Culture",
     name: "Chitradurga",
+    region: "Karnataka",
     href: "/destinations/chitradurga",
     distanceKm: 200,
     description: "The seven-walled hill fort of the Nayakas, wrapped around a dramatic rocky outcrop.",
@@ -83,6 +92,7 @@ export const destinationDirectory = [
   {
     category: "Heritage & Culture",
     name: "Shravanabelagola",
+    region: "Karnataka",
     href: null,
     distanceKm: 145,
     description: "Towering monolithic statue of Bahubali atop Vindhyagiri hill, a major Jain pilgrimage site.",
@@ -90,6 +100,7 @@ export const destinationDirectory = [
   {
     category: "Heritage & Culture",
     name: "Srirangapatna",
+    region: "Karnataka",
     href: null,
     distanceKm: 125,
     description: "Island fortress town of Tipu Sultan, with palaces, temples and the Ranganathaswamy shrine.",
@@ -97,6 +108,7 @@ export const destinationDirectory = [
   {
     category: "Heritage & Culture",
     name: "Bangalore Palace",
+    region: "Karnataka",
     href: "/destinations/bangalore-palace",
     distanceKm: 5,
     description: "Tudor-style royal residence of the Wadiyars in the heart of the city.",
@@ -104,6 +116,7 @@ export const destinationDirectory = [
   {
     category: "Heritage & Culture",
     name: "Bijapur (Vijayapura)",
+    region: "Karnataka",
     href: null,
     distanceKm: 530,
     description: "Home of the Gol Gumbaz and grand Adil Shahi monuments of the Deccan sultanate era.",
@@ -111,6 +124,7 @@ export const destinationDirectory = [
   {
     category: "Heritage & Culture",
     name: "Bagalkot / Badami-Aihole belt",
+    region: "Karnataka",
     href: null,
     distanceKm: 460,
     description: "Cave temples and early Chalukyan rock architecture across Badami, Aihole and Pattadakal.",
@@ -118,6 +132,7 @@ export const destinationDirectory = [
   {
     category: "Heritage & Culture",
     name: "Channapatna",
+    region: "Karnataka",
     href: null,
     distanceKm: 60,
     description: "The 'toy town' famous for its lacquered wooden toys, on the Bangalore–Mysore highway.",
@@ -125,6 +140,7 @@ export const destinationDirectory = [
   {
     category: "Heritage & Culture",
     name: "Devanahalli",
+    region: "Karnataka",
     href: null,
     distanceKm: 35,
     description: "Historic fort town and the closest major landmark to Kempegowda International Airport.",
@@ -132,6 +148,7 @@ export const destinationDirectory = [
   {
     category: "Heritage & Culture",
     name: "Kolar Gold Fields",
+    region: "Karnataka",
     href: null,
     distanceKm: 100,
     description: "A historic gold-mining town once home to some of the world's deepest mines.",
@@ -139,6 +156,7 @@ export const destinationDirectory = [
   {
     category: "Heritage & Culture",
     name: "Belur",
+    region: "Karnataka",
     href: null,
     distanceKm: 220,
     description: "Home to the Chennakeshava Temple, one of the finest examples of Hoysala architecture.",
@@ -146,6 +164,7 @@ export const destinationDirectory = [
   {
     category: "Heritage & Culture",
     name: "Bidar",
+    region: "Karnataka",
     href: null,
     distanceKm: 700,
     description: "A North Karnataka heritage city with Persian-influenced fort and Bahmani-era monuments.",
@@ -153,6 +172,7 @@ export const destinationDirectory = [
   {
     category: "Heritage & Culture",
     name: "Kalaburagi",
+    region: "Karnataka",
     href: null,
     distanceKm: 615,
     description: "A historic Deccan city built around Gulbarga Fort and the Khwaja Bande Nawaz dargah.",
@@ -162,6 +182,7 @@ export const destinationDirectory = [
   {
     category: "Pilgrimage",
     name: "Dharmasthala",
+    region: "Karnataka",
     href: null,
     distanceKm: 295,
     description: "Renowned Manjunatha temple town in Dakshina Kannada, visited by pilgrims of every faith.",
@@ -169,6 +190,7 @@ export const destinationDirectory = [
   {
     category: "Pilgrimage",
     name: "Kukke Subramanya",
+    region: "Karnataka",
     href: null,
     distanceKm: 280,
     description: "Ancient serpent-deity temple set against the forested Kumara Parvatha range.",
@@ -176,6 +198,7 @@ export const destinationDirectory = [
   {
     category: "Pilgrimage",
     name: "Sringeri",
+    region: "Karnataka",
     href: null,
     distanceKm: 330,
     description: "Sharada Peetham on the banks of the Tunga, founded by Adi Shankaracharya.",
@@ -183,6 +206,7 @@ export const destinationDirectory = [
   {
     category: "Pilgrimage",
     name: "Udupi",
+    region: "Karnataka",
     href: "/destinations/udupi",
     distanceKm: 400,
     description: "Krishna Matha temple town, also the birthplace of Udupi's famous coastal cuisine.",
@@ -190,6 +214,7 @@ export const destinationDirectory = [
   {
     category: "Pilgrimage",
     name: "Murudeshwar",
+    region: "Karnataka",
     href: "/destinations/murudeshwara",
     distanceKm: 460,
     description: "Giant Shiva statue on a headland jutting into the Arabian Sea.",
@@ -197,6 +222,7 @@ export const destinationDirectory = [
   {
     category: "Pilgrimage",
     name: "Tirupati",
+    region: "Andhra Pradesh & Telangana",
     href: "/destinations/tirupati",
     distanceKm: 250,
     description: "Sri Venkateswara temple at Tirumala, one of the most visited pilgrimage sites in the world.",
@@ -204,6 +230,7 @@ export const destinationDirectory = [
   {
     category: "Pilgrimage",
     name: "Mantralaya",
+    region: "Andhra Pradesh & Telangana",
     href: "/destinations/mantralayam",
     distanceKm: 340,
     description: "Sri Raghavendra Swamy Mutt on the banks of the Tungabhadra.",
@@ -211,6 +238,7 @@ export const destinationDirectory = [
   {
     category: "Pilgrimage",
     name: "Rameswaram",
+    region: "Tamil Nadu",
     href: "/destinations/rameshwaram",
     distanceKm: 620,
     description: "Island temple town of the Ramanathaswamy shrine, one of the twelve Jyotirlinga sites.",
@@ -220,6 +248,7 @@ export const destinationDirectory = [
   {
     category: "Nature & Falls",
     name: "Shivanasamudra Falls",
+    region: "Karnataka",
     href: null,
     distanceKm: 135,
     description: "Twin segmented falls on the Kaveri — Gaganachukki and Barachukki, best seen after monsoon.",
@@ -227,6 +256,7 @@ export const destinationDirectory = [
   {
     category: "Nature & Falls",
     name: "Lalbagh Botanical Garden",
+    region: "Karnataka",
     href: "/destinations/lalbagh",
     distanceKm: 6,
     description: "240-acre heritage garden with a glasshouse and rock formations, in the heart of the city.",
@@ -234,6 +264,7 @@ export const destinationDirectory = [
   {
     category: "Nature & Falls",
     name: "Cubbon Park",
+    region: "Karnataka",
     href: null,
     distanceKm: 3,
     description: "Central green lung of Bangalore, ideal for a relaxed morning or evening walk.",
@@ -241,6 +272,7 @@ export const destinationDirectory = [
   {
     category: "Nature & Falls",
     name: "Gokarna",
+    region: "Karnataka",
     href: "/destinations/gokarna",
     distanceKm: 480,
     description: "Temple town and a string of quiet crescent beaches on the Karnataka coast.",
@@ -248,6 +280,7 @@ export const destinationDirectory = [
   {
     category: "Nature & Falls",
     name: "Jog Falls",
+    region: "Karnataka",
     href: null,
     distanceKm: 380,
     description: "India's second-highest plunge waterfall, where the Sharavathi drops in four distinct streams.",
@@ -255,6 +288,7 @@ export const destinationDirectory = [
   {
     category: "Nature & Falls",
     name: "Gokak Falls",
+    region: "Karnataka",
     href: null,
     distanceKm: 480,
     description: "A horseshoe-shaped waterfall on the Ghataprabha river in North Karnataka.",
@@ -264,6 +298,7 @@ export const destinationDirectory = [
   {
     category: "Major Cities",
     name: "Mangalore",
+    region: "Karnataka",
     href: "/destinations/mangalore",
     distanceKm: 360,
     description: "One of Mangalore's local beaches, a relaxed coastal stop on the way into the city.",
@@ -271,6 +306,7 @@ export const destinationDirectory = [
   {
     category: "Major Cities",
     name: "Mysore",
+    region: "Karnataka",
     href: "/destinations/mysore",
     distanceKm: 145,
     description: "Palace city with Chamundi Hills, Brindavan Gardens and the illuminated Mysore Palace.",
@@ -278,6 +314,7 @@ export const destinationDirectory = [
   {
     category: "Major Cities",
     name: "Mangalore",
+    region: "Karnataka",
     href: "/destinations/mangalore",
     distanceKm: 350,
     description: "Coastal commercial hub with beaches, temples and coastal cuisine.",
@@ -285,6 +322,7 @@ export const destinationDirectory = [
   {
     category: "Major Cities",
     name: "Hassan",
+    region: "Karnataka",
     href: "/destinations/hassan",
     distanceKm: 185,
     description: "Base for the Hoysala temples of Belur and Halebidu.",
@@ -292,6 +330,7 @@ export const destinationDirectory = [
   {
     category: "Major Cities",
     name: "Shivamogga",
+    region: "Karnataka",
     href: "/destinations/shivamogga",
     distanceKm: 275,
     description: "'Gateway to the Malnad' and the Jog Falls region.",
@@ -299,6 +338,7 @@ export const destinationDirectory = [
   {
     category: "Major Cities",
     name: "Hubli–Dharwad",
+    region: "Karnataka",
     href: null,
     distanceKm: 410,
     description: "North Karnataka's twin-city commercial and cultural hub.",
@@ -306,6 +346,7 @@ export const destinationDirectory = [
   {
     category: "Major Cities",
     name: "Belgaum (Belagavi)",
+    region: "Karnataka",
     href: null,
     distanceKm: 500,
     description: "Fort city near the Maharashtra border with a pleasant climate.",
@@ -313,6 +354,7 @@ export const destinationDirectory = [
   {
     category: "Major Cities",
     name: "Davanagere",
+    region: "Karnataka",
     href: null,
     distanceKm: 260,
     description: "Central Karnataka hub, famous for its benne dosa.",
@@ -320,6 +362,7 @@ export const destinationDirectory = [
   {
     category: "Major Cities",
     name: "Tumkur",
+    region: "Karnataka",
     href: null,
     distanceKm: 70,
     description: "Fast-growing city on the Bangalore–Pune highway corridor.",
@@ -327,6 +370,7 @@ export const destinationDirectory = [
   {
     category: "Major Cities",
     name: "Hospet (Hosapete)",
+    region: "Karnataka",
     href: null,
     distanceKm: 320,
     description: "The road and rail base for visiting Hampi.",
@@ -334,6 +378,7 @@ export const destinationDirectory = [
   {
     category: "Major Cities",
     name: "Ballari (Bellary)",
+    region: "Karnataka",
     href: null,
     distanceKm: 305,
     description: "Historic fort city of the mining belt in eastern Karnataka.",
@@ -341,6 +386,7 @@ export const destinationDirectory = [
   {
     category: "Major Cities",
     name: "Raichur",
+    region: "Karnataka",
     href: null,
     distanceKm: 410,
     description: "Doab city between the Krishna and Tungabhadra rivers.",
@@ -348,6 +394,7 @@ export const destinationDirectory = [
   {
     category: "Major Cities",
     name: "Mandya",
+    region: "Karnataka",
     href: null,
     distanceKm: 100,
     description: "Sugarcane heartland on the Bangalore–Mysore corridor.",
@@ -355,6 +402,7 @@ export const destinationDirectory = [
   {
     category: "Major Cities",
     name: "Kushal Nagar",
+    region: "Karnataka",
     href: null,
     distanceKm: 245,
     description: "Town near Coorg with the Namdroling (Golden Temple) Tibetan monastery.",
@@ -364,6 +412,7 @@ export const destinationDirectory = [
   {
     category: "Outstation Getaways",
     name: "Ooty",
+    region: "Tamil Nadu",
     href: "/destinations/ooty",
     distanceKm: 270,
     description: "The 'Queen of the Nilgiris' — tea gardens, lakes and cool weather.",
@@ -371,6 +420,7 @@ export const destinationDirectory = [
   {
     category: "Outstation Getaways",
     name: "Kodaikanal",
+    region: "Tamil Nadu",
     href: "/destinations/kodaikanal",
     distanceKm: 465,
     description: "Tamil Nadu hill station around a star-shaped lake, in the Palani Hills.",
@@ -378,6 +428,7 @@ export const destinationDirectory = [
   {
     category: "Outstation Getaways",
     name: "Munnar",
+    region: "Kerala",
     href: "/destinations/munnar",
     distanceKm: 490,
     description: "Rolling Kerala tea country, with Eravikulam National Park nearby.",
@@ -385,6 +436,7 @@ export const destinationDirectory = [
   {
     category: "Outstation Getaways",
     name: "Wayanad",
+    region: "Kerala",
     href: null,
     distanceKm: 290,
     description: "Kerala's forested plateau with caves, waterfalls and wildlife sanctuaries.",
@@ -392,6 +444,7 @@ export const destinationDirectory = [
   {
     category: "Outstation Getaways",
     name: "Coimbatore",
+    region: "Tamil Nadu",
     href: null,
     distanceKm: 360,
     description: "Industrial gateway city at the foot of the Western Ghats.",
@@ -399,6 +452,7 @@ export const destinationDirectory = [
   {
     category: "Outstation Getaways",
     name: "Chennai",
+    region: "Tamil Nadu",
     href: null,
     distanceKm: 350,
     description: "Tamil Nadu's capital on the Coromandel Coast.",
@@ -406,6 +460,7 @@ export const destinationDirectory = [
   {
     category: "Outstation Getaways",
     name: "Trichy (Tiruchirappalli)",
+    region: "Tamil Nadu",
     href: null,
     distanceKm: 490,
     description: "Rockfort city and the vast Srirangam temple complex.",
@@ -413,6 +468,7 @@ export const destinationDirectory = [
   {
     category: "Outstation Getaways",
     name: "Madurai",
+    region: "Tamil Nadu",
     href: "/destinations/madurai",
     distanceKm: 435,
     description: "Temple city built around the Meenakshi Amman Temple.",
@@ -420,6 +476,7 @@ export const destinationDirectory = [
   {
     category: "Outstation Getaways",
     name: "Pondicherry",
+    region: "Tamil Nadu",
     href: "/destinations/pondicherry",
     distanceKm: 410,
     description: "French-quarter streets, a seafront promenade and heritage cafes.",
@@ -427,6 +484,7 @@ export const destinationDirectory = [
   {
     category: "Outstation Getaways",
     name: "Hyderabad",
+    region: "Andhra Pradesh & Telangana",
     href: "/destinations/hyderabad",
     distanceKm: 570,
     description: "Telangana's capital — Charminar, Golconda Fort and its IT corridor.",
@@ -434,6 +492,7 @@ export const destinationDirectory = [
   {
     category: "Outstation Getaways",
     name: "Vijayawada",
+    region: "Andhra Pradesh & Telangana",
     href: null,
     distanceKm: 660,
     description: "Andhra Pradesh city on the Krishna river, near Amaravati.",
@@ -441,6 +500,7 @@ export const destinationDirectory = [
   {
     category: "Outstation Getaways",
     name: "Kanyakumari",
+    region: "Tamil Nadu",
     href: "/destinations/kanyakumari",
     distanceKm: 690,
     description: "India's southern tip, where three seas meet.",
@@ -448,6 +508,7 @@ export const destinationDirectory = [
   {
     category: "Outstation Getaways",
     name: "Goa",
+    region: "Goa",
     href: null,
     distanceKm: 560,
     description: "Beaches, Portuguese-era churches and an easy-going coastal vibe.",
@@ -455,6 +516,7 @@ export const destinationDirectory = [
   {
     category: "Outstation Getaways",
     name: "Alleppey (Kerala Backwaters)",
+    region: "Kerala",
     href: "/destinations/kerala-alleppey",
     distanceKm: 590,
     description: "Houseboat cruises through the palm-fringed backwaters.",
@@ -462,6 +524,7 @@ export const destinationDirectory = [
   {
     category: "Outstation Getaways",
     name: "Trivandrum & Kovalam",
+    region: "Kerala",
     href: null,
     distanceKm: 715,
     description: "Kerala's capital, with the Padmanabhaswamy Temple and Kovalam's beaches nearby.",
@@ -469,6 +532,7 @@ export const destinationDirectory = [
   {
     category: "Outstation Getaways",
     name: "Ramanagara",
+    region: "Karnataka",
     href: null,
     distanceKm: 50,
     description: "Rocky granite hills made famous as a Bollywood shooting location.",
@@ -476,6 +540,7 @@ export const destinationDirectory = [
   {
     category: "Outstation Getaways",
     name: "Dandeli",
+    region: "Karnataka",
     href: null,
     distanceKm: 460,
     description: "Karnataka's adventure-tourism hub on the Kali river.",
@@ -483,6 +548,7 @@ export const destinationDirectory = [
   {
     category: "Outstation Getaways",
     name: "Malpe",
+    region: "Karnataka",
     href: null,
     distanceKm: 420,
     description: "One of coastal Karnataka's most popular beaches, near Udupi.",
@@ -490,6 +556,7 @@ export const destinationDirectory = [
   {
     category: "Outstation Getaways",
     name: "Manipal",
+    region: "Karnataka",
     href: null,
     distanceKm: 415,
     description: "A major university town on the coast, known for its campus and beaches.",
@@ -497,6 +564,7 @@ export const destinationDirectory = [
   {
     category: "Outstation Getaways",
     name: "Karwar",
+    region: "Karnataka",
     href: null,
     distanceKm: 520,
     description: "A naval base town where the Kali river meets the Arabian Sea.",
@@ -504,6 +572,7 @@ export const destinationDirectory = [
   {
     category: "Outstation Getaways",
     name: "Kanakapura",
+    region: "Karnataka",
     href: null,
     distanceKm: 60,
     description: "A riverside town near Sangama, the confluence of the Kaveri and Arkavathi.",
@@ -511,6 +580,7 @@ export const destinationDirectory = [
   {
     category: "Outstation Getaways",
     name: "Bhatkal",
+    region: "Karnataka",
     href: null,
     distanceKm: 490,
     description: "A historic medieval port town on the Konkan coast.",
@@ -525,4 +595,16 @@ export const destinationDirectoryCategories = [
   "Nature & Falls",
   "Major Cities",
   "Outstation Getaways",
+];
+
+// Secondary filter dimension — state/region, independent of the thematic
+// category above so both can be applied together (e.g. "Pilgrimage" +
+// "Karnataka"). Only regions actually present in the data above.
+export const destinationDirectoryRegions = [
+  "All regions",
+  "Karnataka",
+  "Tamil Nadu",
+  "Kerala",
+  "Andhra Pradesh & Telangana",
+  "Goa",
 ];

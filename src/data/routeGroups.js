@@ -121,6 +121,14 @@ export const routeGroups = [
       "Mettur",
       "Gobichettipalayam",
       "Omalur",
+      "Ariyalur",
+      "Mayiladuthurai",
+      "Nilgiris",
+      "Perambalur",
+      "Ranipet",
+      "Salem",
+      "Sivaganga",
+      "Tiruvallur",
     ],
   },
   {
@@ -174,6 +182,13 @@ export const routeGroups = [
       "Sabarimala",
       "Thiruvananthapuram",
       "Thekkady",
+      "Idukki (Munnar region)",
+      "Kozhikode (Calicut)",
     ],
+  },
+  {
+    region: "Goa",
+    featured: [],
+    towns: ["North Goa", "South Goa"],
   },
 ];

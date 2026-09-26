@@ -22,13 +22,18 @@ export const services = [
       "Single travellers and small families",
       "Employees relocating or travelling on work",
     ],
+    // Generic outstation/one-way service intent only — destination-specific
+    // route phrases (e.g. "bangalore to mysore taxi") are the primary
+    // target keyword on their own /destinations/[slug] page instead, to
+    // avoid the same specific phrase competing as a primary target on two
+    // pages. This page still links to those destinations via
+    // `popularRoutes` below, which is internal-linking anchor text, not a
+    // second SEO-metadata target for the same phrase.
     keywords: [
       "one way cab bangalore",
       "bangalore one way drop taxi",
       "outstation cab bangalore",
-      "bangalore to mysore taxi",
-      "bangalore to tirupati taxi",
-      "bangalore to hyderabad taxi",
+      "outstation taxi bangalore",
     ],
     popularRoutes: [
       { label: "Bangalore to Mysore", href: "/destinations/mysore" },
@@ -58,11 +63,12 @@ export const services = [
       "Family and group pilgrimages",
       "Custom outstation itineraries",
     ],
+    // Same rationale as outstation-cabs above — generic round-trip intent
+    // here, destination-specific route phrases stay primary on their own
+    // destination pages.
     keywords: [
       "round trip taxi bangalore",
-      "bangalore to ooty taxi",
-      "bangalore to coorg taxi",
-      "bangalore to munnar taxi",
+      "round trip cab bangalore",
       "outstation round trip cab bangalore",
     ],
     popularRoutes: [
@@ -93,11 +99,14 @@ export const services = [
       "City errands, meetings and events",
       "Half-day and full-day local hire",
     ],
+    // "bangalore to nandi hills taxi" removed — Nandi Hills has its own
+    // /destinations/nandi-hills page and that phrase is its primary title
+    // keyword; keeping it here too would target the same specific phrase
+    // as primary on two pages.
     keywords: [
       "local cab bangalore",
       "bangalore local taxi package",
       "bangalore hourly cab booking",
-      "bangalore to nandi hills taxi",
     ],
   },
   {
